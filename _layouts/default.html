@@ -3,6 +3,19 @@
 
   {%- include head.html -%}
 
+  <body>
+
+    {%- include header.html -%}
+
+    {% if page.url == "/contact/" %}
+      <div class="dotted-header"></div>
+    {% endif %}
+
+    <main aria-label="content">
+        {{ content }}
+    </main>
+
+    {%- include footer.html -%}
 
   </body>
 
