@@ -7,7 +7,11 @@
 
     {%- include header.html -%}
 
-    <main aria-label="Content">
+    {% if page.url == "/contact/" %}
+      <div class="dotted-header"></div>
+    {% endif %}
+
+    <main aria-label="content">
         {{ content }}
     </main>
 

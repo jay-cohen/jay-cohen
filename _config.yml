@@ -24,7 +24,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jay-cohen
 
 # Build settings
+permalink: pretty
 markdown: kramdown
+date_format: "%b %-d, %Y"
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
