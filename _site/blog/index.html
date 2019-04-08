@@ -55,6 +55,16 @@
         <div class="post-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
 
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">doggyName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+  <span class="k">get</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="k">self</span><span class="o">.</span><span class="n">dogName</span> <span class="o">==</span> <span class="s">""</span> <span class="o">||</span> <span class="k">self</span><span class="o">.</span><span class="n">dogName</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="kt">NSLocalizedString</span><span class="p">(</span><span class="s">"your dog"</span><span class="p">,</span> <span class="nv">comment</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="k">self</span><span class="o">.</span><span class="n">dogName</span><span class="o">!</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
 <h2 id="some-great-heading-h2">Some great heading (h2)</h2>
 
 <p>Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.</p>

@@ -7,6 +7,18 @@ tags: iOS, location
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
+{% highlight swift %}
+var doggyName: String {
+  get {
+    if self.dogName == "" || self.dogName == nil {
+      return NSLocalizedString("your dog", comment: "")
+    } else {
+      return self.dogName!
+    }
+  }
+}
+{% endhighlight %}
+
 ## Some great heading (h2)
 
 Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.

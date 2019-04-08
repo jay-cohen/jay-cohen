@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-youtube"
   gem "jekyll-sitemap"
   gem "jekyll-coffeescript"
+  gem "rouge"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

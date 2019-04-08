@@ -81,6 +81,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-youtube
+  rouge
   tzinfo-data
 
 BUNDLED WITH

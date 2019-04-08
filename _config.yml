@@ -26,6 +26,7 @@ github_username:  jay-cohen
 # Build settings
 permalink: pretty
 markdown: kramdown
+highlighter: rouge
 date_format: "%b %-d, %Y"
 
 # Plugins
