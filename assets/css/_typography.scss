@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'GraphikLight';
+    src: url(../fonts/Graphik-Light.eot);
+    src: url(../fonts/Graphik-Light.eot) format("embedded-opentype"),url(../fonts/Graphik-Light.woff2) format("woff2"),url(../fonts/Graphik-Light.woff) format("woff"),url(../fonts/Graphik-Light.ttf) format("truetype"),url(../fonts/Graphik-Light.svg#Graphik-Light) format("svg");
+}
+
+@font-face {
+    font-family: 'GraphikRegular';
+    src: url(../fonts/Graphik-Regular.eot);
+    src: url(../fonts/Graphik-Regular.eot) format("embedded-opentype"),url(../fonts/Graphik-Regular.woff2) format("woff2"),url(../fonts/Graphik-Regular.woff) format("woff"),url(../fonts/Graphik-Regular.ttf) format("truetype"),url(../fonts/Graphik-Regular.svg#Graphik-Regular) format("svg");
+}
+
+body {
+    font-family: $gill;
+    font-size: $normalFont;
+    font-weight: 300;
+    line-height: 26px;
+    color: lighten($color: $baseColor, $amount: 20%);
+}
+
+.site-header {
+    .availability {
+        h2 {
+            font-size: $smallFont;
+            font-weight: normal;
+            text-align: center;
+            letter-spacing: 0;
+            padding-top: $smallPadding;
+            padding-bottom: $smallPadding;
+            margin:0;
+            line-height: inherit;
+        }
+        strong {
+            text-decoration: underline;
+            font-weight: normal;
+        }
+    }
+}
+
+.intro {
+    h1 {
+        font-family: $graphik;
+        font-weight: 300;
+    }
+    p {
+        font-size: $higherFont;
+        line-height: 28px;
+    }
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+::selection {
+    background: #999;
+    color: #fff;
+}

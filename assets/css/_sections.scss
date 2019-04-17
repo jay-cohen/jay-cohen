@@ -1,7 +1,38 @@
+.site-header {
+    .availability {
+        background-color: lighten($color: $baseColor, $amount: 10%);
+        color: $white;
+        min-height: 43px;
+        cursor: pointer;
+        @media screen and (min-width: $mobile) {
+            width: 270px;
+            margin: 0 auto;
+        }
+    } 
+}
+
+.navigation {
+    margin-top: 30px;
+    img {
+        display: block;
+        width: 47%;
+        height: auto;
+        margin: 0 auto;
+        @media screen and (min-width: $mobile) {
+            margin: 0;
+            display: inline;
+            width: 120px;
+        }
+    }
+}
+
 article {
 
     .post-content {
         width: 60%;
         margin: 0 auto;
+        @media screen and (min-width: $mobile) {
+            width: 100%;
+        }
     }
 }
