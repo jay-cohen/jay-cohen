@@ -1,0 +1,101 @@
+.navigation {
+    margin-top: 40px;
+    img {
+        display: block;
+        width: 47%;
+        height: auto;
+        margin: 0 auto;
+        @media screen and (min-width: $mobile) {
+            margin: 0;
+            margin-top: 5px;
+            display: inline;
+            width: 120px;
+        }
+    }
+    .main-nav {
+        padding: $smallPadding;
+        text-align: center;
+        margin-top: 10px;
+        @media screen and (min-width: $mobile) {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        ul {
+            margin: 0;
+            @media screen and (min-width: $mobile) {
+                text-align: right;
+            }
+            li {
+                position: relative;
+                list-style-type: none;
+                display: inline;
+                padding-right: 20px;
+                font-family: $gill;
+                font-weight: normal;
+                @media screen and (min-width: $mobile) {
+                    padding-right: 30px;
+                }
+                a {
+                    color: $baseColor;
+                    text-decoration: none;
+                }
+                
+            }
+            .active {
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                bottom: -10px;
+                left: 15%;
+                background-color: $orange;
+            }
+            .active-blog {
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                bottom: -10px;
+                left: 10%;
+                background-color: $orange;
+            }
+        }
+    }
+}
+
+.work-nav {
+    padding-bottom: 50px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 125px;
+        padding-bottom: 150px;
+    }
+    ul {
+        li {
+            display: block;
+            list-style: none;
+            font-family: $gill;
+            font-size: 20px;
+            font-weight: normal;
+            padding-bottom: 10px;
+            @media screen and (min-width: $mobile) {
+                padding-bottom: 17px;
+                margin-bottom: 0;
+            }
+            a {
+                position: relative;
+                text-decoration: none;
+                color: $baseColor;
+            }
+        }
+        .current::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 10px;
+            left: -20px;
+            top: 49%;
+            height: 2px;
+            background-color: $orange;
+            transition: width 0.5s ease 0.1s;
+        }
+        
+    }
+}

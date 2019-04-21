@@ -1,3 +1,8 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
 .site-header {
     .availability {
         background-color: lighten($color: $baseColor, $amount: 10%);
@@ -11,28 +16,68 @@
     } 
 }
 
-.navigation {
-    margin-top: 30px;
-    img {
-        display: block;
-        width: 47%;
-        height: auto;
-        margin: 0 auto;
-        @media screen and (min-width: $mobile) {
-            margin: 0;
-            display: inline;
-            width: 120px;
-        }
+.intro {
+    margin: 40px 0;
+    @media screen and (min-width: $tablet) {
+        margin: 200px 0 0 0;
+    }
+}
+
+.work {
+    position: relative;
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 100px;
     }
 }
 
 article {
-
-    .post-content {
+    width: 100%;
+    @media screen and (min-width: $mobile) {
         width: 60%;
         margin: 0 auto;
-        @media screen and (min-width: $mobile) {
-            width: 100%;
+    }
+}
+
+.clients {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 180px;
+        h2 {
+            margin-bottom: 80px;
+        }
+    }
+    img {
+        max-height: 120px;
+        max-width: 120px;
+        padding: 10px 0;
+        @media screen and (min-width: $tablet) {
+            max-width: 230px;
+            max-height: 180px;
+        }
+    }
+    .wqa {
+        padding-top: 5%;
+        @media screen and (min-width: $tablet) {
+            padding-top: 22.5%;
+        }
+    }
+}
+
+footer {
+    .navigation {
+        margin-top: 0;
+        .main-nav {
+            ul {
+                text-align: center;
+                margin-bottom: 10px;
+                @media screen and (min-width: $tablet) {
+                    text-align: left;
+                } 
+            }
+            
         }
     }
 }

@@ -10,12 +10,41 @@
     src: url(../fonts/Graphik-Regular.eot) format("embedded-opentype"),url(../fonts/Graphik-Regular.woff2) format("woff2"),url(../fonts/Graphik-Regular.woff) format("woff"),url(../fonts/Graphik-Regular.ttf) format("truetype"),url(../fonts/Graphik-Regular.svg#Graphik-Regular) format("svg");
 }
 
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+::selection {
+    background: #999;
+    color: #fff;
+}
+
 body {
     font-family: $gill;
     font-size: $normalFont;
     font-weight: 300;
     line-height: 26px;
     color: lighten($color: $baseColor, $amount: 20%);
+}
+
+ul {
+    li {
+        list-style: none;
+        display: inline;
+        padding-right: 10px;
+    }
+}
+
+a {
+    color: $baseColor;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: lighten($color: $baseColor, $amount: 30%);
+    
 }
 
 .site-header {
@@ -41,6 +70,8 @@ body {
     h1 {
         font-family: $graphik;
         font-weight: 300;
+        font-size: 32px;
+        margin-bottom: 24px;
     }
     p {
         font-size: $higherFont;
@@ -48,13 +79,40 @@ body {
     }
 }
 
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
+main {
+    h2 {
+        font-family: $gill;
+        font-weight: normal;
+        font-size: 30px;
+    }
+    h4 {
+        font-family: $gill;
+        font-weight: normal;
+        font-size: 20px;
+    }
 }
 
-::selection {
-    background: #999;
-    color: #fff;
+.work {
+    h4 {
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 10px;
+            margin-top: 40px;
+        }
+    }
+}
+
+footer {
+    font-size: 14px;
+    .secondary-text {
+        color: lighten($color: $baseColor, $amount: 50%);
+        font-weight: normal; 
+        text-align: center;
+        @media screen and (min-width: $tablet) {
+            text-align: right; 
+        }        
+    }
+    .small-text {
+        text-align: center;
+        font-size: 13px;
+    }
 }
