@@ -19,6 +19,12 @@ img {
 .intro {
     margin: 40px 0;
     @media screen and (min-width: $tablet) {
+        margin: 100px 0 0 0;
+        .six {
+            width: 65%;
+        }
+    }
+    @media screen and (min-width: $desktop) {
         margin: 200px 0 0 0;
     }
 }
@@ -83,6 +89,12 @@ img {
     .email-link {
         @media screen and (min-width: $tablet) {
             position: absolute;
+            top: 30%;
+            right: -30px;
+            font-size: 30px;
+        }
+        @media screen and (min-width: $desktop) {
+            position: absolute;
             top: 40%;
             right: 60px;
         }
@@ -96,7 +108,7 @@ img {
 
 .about {
     position: relative;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         img {
             max-width: 280px;
             height: auto;
@@ -110,7 +122,9 @@ img {
             float: left;
             position: absolute;
             top: 52%;
-            right: 240px;
+            @media screen and (min-width: $largerScreen) {
+                right: 240px;
+            }
         }
     }
    
@@ -122,13 +136,17 @@ img {
 article {
     width: 100%;
     @media screen and (min-width: $mobile) {
-        width: 60%;
+        width: 65%;
         margin: 0 auto;
     }
     @media screen and (min-width: $tablet) {
+        width: 85%;
        margin-top: 100px;
        margin-bottom: 48px;
     }
+    @media screen and (min-width: $desktop) {
+        width: 65%;
+     }
     .post-header {
         margin-top: 38px;
         @media screen and (min-width: $tablet) {
@@ -171,22 +189,23 @@ article {
     }
 }
 
+
 // DOWNLOAD BOX
 
 .download-box {
+    border-radius: $borderRadius;
+    cursor: pointer;
     color: $white;
-    padding: 24px 0;
-    background: url(../img/project-icon@2x.png) no-repeat right center;
-    background-size: 9%;
-    .content {
-        margin-right: 100px;
-        background-color: lighten($color: $blue, $amount: 8%);
-        padding: 32px 24px;
-        border-radius: $borderRadius;
-    }
+    padding: 32px 24px;
+    background: lighten($color: $blue, $amount: 8%) url(../img/project-icon@2x.png) no-repeat right center;
+    background-size: 25%;
+    transition: all 0.5s ease;
     h3 {
         margin-bottom: 0;
         font-size: 20px;
+    }
+    &:hover {
+        background-size: 23%;
     }
 }
 

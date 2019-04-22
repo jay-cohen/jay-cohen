@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Guidelines
+exclude_rss: true
+title: Guidelines & FAQ's
 permalink: /guidelines/
 ---
 
@@ -16,7 +17,7 @@ permalink: /guidelines/
             <div class="six columns">
                     <h3>How does it all work</h3>
                     <p>Simply start by sending an email with your project details. Once we’ve discussed how we can work together, arrange progress updates and feedback points we’ll agree terms and begin. After you’re happy with the work and ready to either release on the App Store or publish live to a server we’ll finanlise the terms of the agreement or move on to the next feature.</p>
-                    <h3>Why don’t you start a studio</h3>
+                    <h3>Why don’t you set up shop</h3>
                     <p>With my extensive skill set across all areas of digital I often get asked this question and the truth is I like to be mobile (no pun). Being an agency wouldn’t give me the freedom I’ve come to enjoy and depend on. This freedom helps me to return value for money to my clients and creative suggestions you wouldn’t necessarily get from being in an office.</p>
             </div>
             <div class="six columns">

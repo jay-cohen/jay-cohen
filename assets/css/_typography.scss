@@ -115,18 +115,24 @@ main {
 }
 
 .page {
-    margin-top: 39px;
+    margin-top: 0;
+    @media screen and (min-width: $mobile) {
+        margin-top: 39px;
+    }
     h1 {
         font-family: $graphik;
         font-size: 28px;
         font-weight: 300;
-        margin-top: 40px;
-        text-align: center;
-        display: none;
+        margin-top: 22px;
+        margin-bottom: 28px;
+        text-align: left;
         @media screen and (min-width: $mobile) {
-            margin: 38px 0;
+            margin: 38px 0 18px 0;
             text-align: left;
             display: block;
+        }
+        @media screen and (min-width: $tablet) {
+            margin: 38px 0;
         }
     }
     h5 {
@@ -161,6 +167,23 @@ main {
     }
 }
 
+.guidelines {
+    h1 {
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 18px;  
+        }
+    }
+    h2 {
+       font-size: 20px;
+       margin-top: 0;
+       margin-bottom: 38px;
+       font-style: italic;
+       @media screen and (min-width: $mobile) {
+           margin-bottom: 75px;  
+       }
+    }
+}
+
 
 article {
     .post-header {
@@ -185,7 +208,12 @@ footer {
         text-align: center;
         @media screen and (min-width: $tablet) {
             text-align: right; 
-        }        
+            margin-top: 0;
+            font-size: 12px;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 14px;
+        }
     }
     .small-text {
         text-align: center;

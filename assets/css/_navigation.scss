@@ -39,7 +39,9 @@
                     color: $baseColor;
                     text-decoration: none;
                 }
-                
+            &:last-child {
+                padding-right: 0;
+            }
             }
             .active {
                 position: absolute;
@@ -54,7 +56,15 @@
                 width: 20px;
                 height: 2px;
                 bottom: -10px;
-                left: 10%;
+                left: 6%;
+                background-color: $orange;
+            }
+            .active-contact {
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                bottom: -10px;
+                left: 33%;
                 background-color: $orange;
             }
         }
@@ -62,10 +72,14 @@
 }
 
 .work-nav {
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     @media screen and (min-width: $tablet) {
-        padding-top: 80px;
-        padding-bottom: 150px;
+        padding-top: 38px;
+        padding-bottom: 74px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 78px;
+        padding-bottom: 148px;
     }
     ul {
         margin-left: 20px;

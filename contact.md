@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude_rss: true
 title: Contact
 permalink: /contact/
 ---
@@ -13,7 +14,7 @@ permalink: /contact/
 
                     <h4>Guidelines</h4>
                     <p>I work remotely, if you need me on site then this will be reflected in the day rate.  I’m happy to face-to-face meetings with an agreed timeframe to catch up and also help with discovery. If a fixed cost is the best approach to your project I will require 50% at the start with the remaining upon completion. I also have some <a href="/guidelines">general faq’s</a>.</p>
-                    <h5>I’m not interested in any full-time positions.</h5>
+                    <h5>Note: I’m not interested in any full-time positions.</h5>
             </div>
             <div class="six columns">
                 <div class="email-link">

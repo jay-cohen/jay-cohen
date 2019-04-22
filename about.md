@@ -1,5 +1,6 @@
 ---
 layout: default
+exclude_rss: true
 title: About
 permalink: /about/
 ---
