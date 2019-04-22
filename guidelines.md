@@ -3,7 +3,8 @@ layout: default
 title: Guidelines
 permalink: /guidelines/
 ---
-<section class="guidelines">
+
+<section class="page guidelines">
     <div class="container">
         <div class="row">
             <div class="twelve columns">

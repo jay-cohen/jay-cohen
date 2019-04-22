@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<section class="about">
+<section class="page about">
     <div class="container">
        <div class="row">
             <div class="twelve columns">
@@ -13,7 +13,7 @@ permalink: /about/
         </div>
         <div class="row">
             <div class="six columns">
-                    <h3>A little about me..</h3>
+                    <h3>Getting to know me...</h3>
                     <p>My favourite place is the Isle of Arran, there’s something about it that relaxes you beyond words. I have a passion for agriculture and how mobile technology can assist in that space. My favourite brewery is Brew Dog and I’m gluten free (don’t let that put you off).</p>
 
                     <h3>Why mobile apps</h3>
@@ -21,8 +21,9 @@ permalink: /about/
                     <p>This all changed the moment Apple released Swift and one of my clients requested I build them an iOS app. I’d dabbled with Swift in the past but without a solid project to build it’s difficult to gain any true experience so I jumped at the chance. The build was a rollacoaster journey of learning, hair pulling and moments of joy throughout but when it finally hit the app store it was like all the pieces fell into place.</p>
                     <p>I successfully moved into iOS development full time 5 years ago in April. I occasionally build websites and back-end services for clients who need the “Whole package” but having got the badge of honour by building my first client app the only way is mobile!🕺🏻</p>
             </div>
-            <div class="five columns">
-                <img src="/assets/img/me-in-arran.jpg" alt="Picture of myself in Arran">
+            <div class="six columns">
+                <img src="/assets/img/arran@2x.jpg" alt="Picture of myself in Arran" class="arran">
+                <img src="/assets/img/me@2x.jpg" alt="Picture of myself in Arran" class="me">
             </div>
         </div>
     </div>
