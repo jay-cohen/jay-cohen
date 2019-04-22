@@ -7,6 +7,10 @@ layout: default
     <div class="container">
         <header class="post-header center">
             <h1 class="post-title">{{ post.title | escape }}</h1>
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+                {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+                {{ post.date | date: date_format }}
+            </time>
         </header>
         <div class="post-content">
         {{ post.content }}

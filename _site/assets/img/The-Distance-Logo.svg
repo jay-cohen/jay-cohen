@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="227px" height="176px" viewBox="0 0 227 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>The-Distance-Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-774.000000, -4992.000000)">
+            <g id="The-Distance-Logo" transform="translate(774.000000, 4992.000000)">
+                <text id="THE-DISTANCE" font-family="Raleway-Light, Raleway" font-size="32" font-weight="300" fill="#404040">
+                    <tspan x="0" y="175">THE DISTANCE</tspan>
+                </text>
+                <g id="Group-4" transform="translate(54.000000, 0.000000)">
+                    <polygon id="Triangle" fill="#151515" points="64.5 0 129 129 0 129"></polygon>
+                    <polygon id="Triangle" fill="#535353" points="71.5 14 129 129 14 129"></polygon>
+                    <polygon id="Triangle" fill="#AEAEAE" points="61 35 108 129 14 129"></polygon>
+                    <polygon id="Triangle" fill="#E8E8E8" points="77.9552039 69.5182618 108 129 14.2996181 129"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

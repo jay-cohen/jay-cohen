@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+exclude_rss: true
 title: Freelance iOS, Watch OS, TV OS Developer.
 ---
 
