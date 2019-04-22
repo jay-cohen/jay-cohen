@@ -93,6 +93,7 @@
             font-size: 20px;
             font-weight: normal;
             padding-bottom: 10px;
+            transition: all 0.5s ease 0.1s;
             @media screen and (min-width: $mobile) {
                 padding-bottom: 17px;
                 margin-bottom: 0;
@@ -101,18 +102,31 @@
                 position: relative;
                 text-decoration: none;
                 color: $baseColor;
+                display: block;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    left: -20px;
+                    top: 49%;
+                    height: 2px;
+                    background-color: $orange;
+                    opacity: 0;
+                    transition: all .5s ease 0.1s;
+                }
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                        left: -15px;
+                        height: 2px;
+                    }
+                }
             }
-        }
-        .current::before {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 10px;
-            left: -20px;
-            top: 49%;
-            height: 2px;
-            background-color: $orange;
-            transition: width 0.5s ease 0.1s;
+            &:hover {
+                margin-left: 14px;
+                display: block;
+            }
+            
         }
         
     }

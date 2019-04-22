@@ -9,11 +9,18 @@ img {
         color: $white;
         min-height: 43px;
         cursor: pointer;
+        transition: all 0.3s ease;
         @media screen and (min-width: $mobile) {
             width: 270px;
             margin: 0 auto;
         }
-    } 
+        a {
+            color: $white;
+        }
+        &:hover {
+            background-color: $blue;
+        }
+    }
 }
 
 .intro {
@@ -26,7 +33,11 @@ img {
     }
     @media screen and (min-width: $desktop) {
         margin: 200px 0 0 0;
+        p {
+            width: 68%;
+        }
     }
+
 }
 
 .work {
@@ -64,6 +75,16 @@ img {
         @media screen and (min-width: $tablet) {
             padding-top: 22.5%;
         }
+    }
+}
+
+.dotted-box {
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        right:10%;
+        height: 380px;
+        width: 500px;
+        background: url(../img/cross-grid.png) repeat top left;
     }
 }
 

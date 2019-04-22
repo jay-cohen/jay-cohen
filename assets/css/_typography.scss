@@ -42,12 +42,10 @@ ul {
 a {
     color: $baseColor;
     text-decoration: none;
-    transition: color 0.3s ease;
     font-weight: 500;
 }
-a:hover {
-    color: lighten($color: $baseColor, $amount: 30%);
-    
+a:hover, a:visited {
+    color: lighten($color: $baseColor, $amount: 30%); 
 }
 
 h1, h2, h3, h4, h5, h6 {
