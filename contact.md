@@ -3,6 +3,7 @@ layout: default
 exclude_rss: true
 title: Contact
 permalink: /contact/
+description: If you’d like to reach me you can email using the big email link. If you can provide some details about your project and when you’re looking to hit the App Stores that would be fantastic. We can arrange a follow up call to get to know the project in detail and get started.
 ---
 
 <section class="page contact">

@@ -3,6 +3,7 @@ layout: default
 exclude_rss: true
 title: About
 permalink: /about/
+description: My favourite place is the Isle of Arran, there’s something about that place which relaxes you beyond words. I have a passion for agriculture and how mobile technology can assist in that space. My favourite brewery is Brew Dog and I’m gluten free (don’t let that put you off).
 ---
 
 <section class="page about">

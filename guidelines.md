@@ -3,6 +3,7 @@ layout: default
 exclude_rss: true
 title: Guidelines & FAQ's
 permalink: /guidelines/
+description: How does it all work? Simply start by sending an email with your project details. Once we’ve discussed how we can work together, arrange progress updates and feedback points we’ll agree terms and begin.
 ---
 
 <section class="page guidelines">
