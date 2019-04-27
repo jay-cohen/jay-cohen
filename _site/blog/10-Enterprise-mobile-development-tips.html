@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>10 Enterprise mobile development tips for entrepreneurs/developers | Freelance App Developer, iPhone, iPad, Apple Watch, Apple TV - UK</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="10 Enterprise mobile development tips for entrepreneurs/developers" />
+<meta name="author" content="Jay Cohen" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1. Organise the project Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section. Tickets are what’s used in software building to associate a task to an individual or team, if you don’t know 😉. This approach makes it easier to set internal deadlines for pre release builds that become ready for team testing, even if that team is you. You could also setup GIT flow to handle release organisation or create them manually from you master branch." />
+<meta property="og:description" content="1. Organise the project Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section. Tickets are what’s used in software building to associate a task to an individual or team, if you don’t know 😉. This approach makes it easier to set internal deadlines for pre release builds that become ready for team testing, even if that team is you. You could also setup GIT flow to handle release organisation or create them manually from you master branch." />
+<link rel="canonical" href="http://localhost:4000/blog/10-Enterprise-mobile-development-tips" />
+<meta property="og:url" content="http://localhost:4000/blog/10-Enterprise-mobile-development-tips" />
+<meta property="og:site_name" content="Freelance App Developer, iPhone, iPad, Apple Watch, Apple TV - UK" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-14T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"1. Organise the project Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section. Tickets are what’s used in software building to associate a task to an individual or team, if you don’t know 😉. This approach makes it easier to set internal deadlines for pre release builds that become ready for team testing, even if that team is you. You could also setup GIT flow to handle release organisation or create them manually from you master branch.","author":{"@type":"Person","name":"Jay Cohen"},"@type":"BlogPosting","url":"http://localhost:4000/blog/10-Enterprise-mobile-development-tips","headline":"10 Enterprise mobile development tips for entrepreneurs/developers","dateModified":"2019-03-14T00:00:00+00:00","datePublished":"2019-03-14T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/10-Enterprise-mobile-development-tips"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Freelance App Developer, iPhone, iPad, Apple Watch, Apple TV - UK" /></head>
+<body><header class="site-header" role="banner">
+  <section class="availability">
+    <div class="container">
+      <a href="mailto:jay-cohen@outlook.com?subject=June booking">
+        <h2>Availability for hire in June. <strong>Book now</strong></h2>
+      </a>
+    </div>
+  </section>
+  <section class="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <!-- Logo SVG -->
+          <a class="site-title" rel="author" href="/"><img src="/assets/img/Jay-Cohen-Logo.svg" alt="Jay Cohen Logo"></a>
+        </div>
+        <div class="eight columns">
+            <nav class="main-nav">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+    <main aria-label="content">
+        <section class="blog">
+  <article class="post">
+      <div class="container">
+    <header class="post-header center">
+        <h1 class="post-title">10 Enterprise mobile development tips for entrepreneurs/developers</h1>
+        <time datetime="2019-03-14T00:00:00+00:00">Mar 14, 2019
+        </time>
+    </header>
+    <div class="post-content">
+        <h2 id="1-organise-the-project">1. Organise the project</h2>
+<p>Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section. Tickets are what’s used in software building to associate a task to an individual or team, <a href="https://www.atlassian.com/agile/project-management/epics-stories-themes" target="_blank">if you don’t know</a> 😉. This approach makes it easier to set internal deadlines for pre release builds that become ready for team testing, even if that team is you. You could also setup GIT flow to handle release organisation or create them manually from you master branch.</p>
+
+<p><img src="http://localhost:4000/assets/blog/2019/organise-planet.jpeg" alt="plan your projects" class="img-med-center" /></p>
+
+<h2 id="2-files-and-structure">2. Files and structure</h2>
+<p>An organised project should have organised codebase, right? Place groupings of files into folders with meaningful names, name your files correctly and follow platform guidelines. When the project contains 50+ files having a clean nested structure will be invaluable.</p>
+
+<h2 id="3-localise-from-the-start">3. Localise from the start</h2>
+<p>If you don’t think your app needs to be in another language you need to localise it. The app may pivot further in its lifecycle and be required to be in 11 other languages under an expansion plan. Mobile development is still reliant on baking strings into files and this creates a pain point when changing values later. Localising the project now will save you time make adding new languages easy, trust me!</p>
+
+<h2 id="4-api-data">4. API data</h2>
+<p>Most enterprise apps tend to have a Content Management System to handle content messages for text labels, buttons etc. This content is requested and stored on first launch allowing the company to change the text without App Store submission. When requesting an endpoint however generic responses such as errors are still sent in string format, decoupling them from the initial CMS content request. Using a format similar to below eliminates this issue and ultimately gives you a bandwidth save.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">References</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">string</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">within</span><span class="w"> </span><span class="err">content</span><span class="w"> </span><span class="err">request</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>There are other easy wins such as minimising your API’s functionality, this includes interogation of data (outside the remit of search and Oauth), passing full user objects back to update specific values, client side querying etc.</p>
+
+<h2 id="5-realm-data-storage">5. Realm data storage</h2>
+<p>Native database stores are a great way to handle persisted data across both major platforms. Interrogating data however on particular platforms is cumbersome without writing unecessary code. <a href="https://realm.io/" target="_blank">Realm</a> provides a way to handle your data storage both locally and within the cloud. There’s a studio app that UI testers can use for monitoring of data locally, especially app update migrations. There’s also <a href="https://www.sqlite.org/index.html" target="_blank">SQLite</a> for any old schoolers out there, but given the simplicity of Realm or native functionality you should be avoiding it.</p>
+
+<h2 id="6-one-design-pattern">6. One design pattern</h2>
+<p>A big issue when facing software development at scale using a team is conforming to a single design pattern. Developers tend to have their own preference over what’s the best approach for the project. MVC, MVVM, RxSwift are all great but there needs to be a concensus among the build teams. Include a README.md file that states this point and I would reject pull requests that don’t follow it. I can’t stress how important a concern this should be when starting the build or performing a rewrite. Cocoapods and libraries excluded.</p>
+
+<p><img src="http://localhost:4000/assets/blog/2019/code-smell.jpeg" alt="have a single design pattern" class="img-med-center" /></p>
+
+<h2 id="7-test-your-features">7. Test your features</h2>
+<p>I’ve worked with developers who only unit test and developers who only device test. Whilst there’s no silver bullet to solve testing you really need to get your hands dirty. Interrogate the hell out of your code, don’t just code for your exact case and expect it to work 100/100.</p>
+
+<blockquote>
+  <p>Example: If your feature includes location based services around geofences, actually go out with your laptop and test on a device.</p>
+</blockquote>
+
+<p>No developer/entrepreneur should consider themselves the messiah of brackets, they will be humbled. Applications shouldn’t be in a position to crash and receive ⭐️ star reviews due to a lack of proper testing. In my opinion a seriously bad developer is one who doesn’t test, no matter how quick or awesome they think they are! TESTING IS NEEDED!</p>
+
+<p><img src="http://localhost:4000/assets/blog/2019/test-production.jpeg" alt="test properly" class="img-med-center" /></p>
+
+<h2 id="8-have-a-developer-blog">8. Have a developer blog</h2>
+<p>Developers occasionally like to know what other developers are doing and it’s important to keep the troops motivated. This can be an internal blog or something non brand affiliated. By having a place that developers can contribute to will speak volumes about your team and help facilitate future recruitment.</p>
+
+<p>Solo developers/entrepreneurs should also have a place to write their experiences down, medium for example.</p>
+
+<h2 id="9-secure-it">9. Secure it!</h2>
+<p>Security should be a major concern for any enterprise app who communicates data via a network. If you spent months building a product you intended to make a viable business out of wouldn’t you protect it the best way possible? An example of bad practice:</p>
+
+<p>I previously consulted at a company who were storing user credentials inside UserDefaults (A local storage mechanism for unsecure data in iOS) whilst also transmitting the same user data over HTTP. I quickly told them to change it!
+It’s 2019 folks, use HTTPS and pin your certificate’s public key to the device, or even the certificate! For more information on security techniques please check out the following links:</p>
+<ul>
+  <li><a href="https://infinum.co/the-capsized-eight/ssl-pinning-revisited" target="_blank">SSL pinning on iOS</a></li>
+  <li><a href="https://developer.android.com/training/articles/security-ssl.html" target="_blank">SSL pinning on Android</a></li>
+</ul>
+
+<h2 id="10-review">10. Review</h2>
+<p>Finally, take the time to review your code and look for repetition you can omit. If you’re at the MVP stage ensure you’re code doesn’t have any memory leaks or open holes leading your application to crash. You need to be 100% confident in the code you’ve implemented otherwise you shouldn’t release it. Even if you’re constrained by time.</p>
+
+<h2 id="summary">Summary</h2>
+<p>Mobile development is an ever changing entity and by utilising some or all of the techniques above your app should be in a better position to handle users at scale. Keep security concerns at the forefront of development and remember to test features for failing cases as much as the positives. People tend to read reviews before they download apps and if you’re full of ⭐️ star reviews, your business will fail.</p>
+
+<p><em>This post was originally on Medium.</em></p>
+
+      </div>
+    <a class="u-url" href="/blog/10-Enterprise-mobile-development-tips" hidden></a>
+    </div>
+  </article>
+</section>
+    </main><footer role="complementary">
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <div class="navigation">
+                    <nav class="main-nav">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+                </div>
+            </div>
+            <div class="one-half column">
+                <p class="secondary-text right">&copy; 2019 - JOC Media Ltd. (My Company) All rights reserved.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <p class="small-text">Subscribe <a href="/feed.xml">via RSS.</a> Built with Jekyll.</p>
+            </div>
+        </div>
+    </div>
+</footer></body>
+
+</html>

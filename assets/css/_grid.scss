@@ -265,10 +265,6 @@
   
   /* Lists
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  ul {
-    list-style: circle inside; }
-  ol {
-    list-style: decimal inside; }
   ol, ul {
     padding-left: 0;
     margin-top: 0; }
@@ -352,4 +348,5 @@
     content: "";
     display: table;
     clear: both; }
+
   

@@ -137,7 +137,7 @@ img {
         .me {
             float: right;
             position: relative;
-            margin-top: 14px;
+            margin-top: 32px;
         }
         .arran {
             float: left;
@@ -153,61 +153,88 @@ img {
 
 
 // BLOG
-
-article {
-    width: 100%;
-    @media screen and (min-width: $mobile) {
-        width: 65%;
-        margin: 0 auto;
-    }
+.blog {
     @media screen and (min-width: $tablet) {
-        width: 85%;
-       margin-top: 100px;
-       margin-bottom: 48px;
+        margin-top: 100px;
+        margin-bottom: 78px;
     }
-    @media screen and (min-width: $desktop) {
-        width: 65%;
-     }
-    .post-header {
-        margin-top: 38px;
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 24px;
+    article {
+        width: 100%;
+        @media screen and (min-width: $mobile) {
+            width: 65%;
+            margin: 0 auto;
         }
-        time {
+        @media screen and (min-width: $tablet) {
+            width: 85%;
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 65%;
+         }
+        .post-header {
+            margin-top: 38px;
             @media screen and (min-width: $tablet) {
-                text-align: center;
+                margin-bottom: 24px;
             }
-            display: block;
-            font-size: $smallFont;
+            time {
+                @media screen and (min-width: $tablet) {
+                    text-align: center;
+                }
+                display: block;
+                font-size: $smallFont;
+                font-weight: normal;
+                color: lighten($color: $baseColor, $amount: 60%);
+            }
+        }
+        .post-title {
+            a {
+                font-weight: 300;
+            }
+        }
+        .post-content {
+            pre {
+                margin: 22px 8px;
+            }
+            .img-med-center {
+                width: 100%;
+                @media screen and (min-width: $tablet) {
+                    width: 65%;
+                }
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #272822;
+            padding: 12px;
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: $borderRadius;
+            font-size: 20px;
+            font-family: $graphik;
+            letter-spacing: 0;
             font-weight: normal;
-            color: lighten($color: $baseColor, $amount: 60%);
+            line-height: 1.6em;
+            p {
+                margin: 20px 10px;
+                color: $white !important;
+            }
+            @media screen and (min-width: $tablet) {
+                padding: 24px;
+            }
         }
+        .middot {
+            width: 22px;
+            height: 1px;
+            background-color: $baseColor;
+            margin: 48px auto 0 auto;
+            display: block;
+        }
+        
     }
-    .post-content {
-        pre {
-            margin: 22px 8px;
-        }
-    }
-    blockquote {
-        font-style: italic;
-        background-color: #272822;
-        padding: 12px;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: $borderRadius;
-        font-size: 20px;
-        font-family: $graphik;
-        letter-spacing: 0;
-        font-weight: normal;
-        line-height: 1.6em;
-        p {
-            margin: 20px 10px;
-            color: $white !important;
-        }
-        @media screen and (min-width: $tablet) {
-            padding: 24px;
-        }
-    }
+    
 }
 
 
@@ -233,6 +260,9 @@ article {
 // FOOTER
 
 footer {
+    @media screen and (min-width: $tablet) {
+        margin-top: 48px;
+    }
     .navigation {
         margin-top: 0;
         .main-nav {
