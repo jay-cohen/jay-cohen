@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: /https://jay-cohen.github.io/jay-cohen/sitemap.xml
