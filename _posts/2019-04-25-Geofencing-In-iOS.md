@@ -6,48 +6,65 @@ author: "Jay Cohen"
 tags: iOS, location
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple's Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.
+
+## Inital problems
+The main issue faced was around accuracy. iPhones are currently accurate to a radius of 10-15m and uses on average 2 cell tower GPS locations to provide the coordinates that pin point the device. While it isn't true GPS it's still an accurate way to determine a users location. The second issue would be the drawing of these boundries inconjunction with receiving notifications (performance issue). Having gone through various scenarios the solution to store and cache data once a user had entered a location seemed the best of the bunch. Under this solution the server and the device interaction would be small (push notification size) and keep costs low at server level.  
+
+
+## Solution
+
+Having advised on how the back end services would handle the transferring of data between entites the POC was created. The POC was delivered ahead of schedule and testing began. Both myself and the client visited various locations throughout the UK and with the back end guys on speakerphone we tested Guerrilla style. Under testing we found an issue relating to device notification queuing and removal, but that was an easy fix. If that's one takeaway from this article is that you should test your applications under the scenario that it would be used in, don't just rely on the simulator.
+
+
+### Summary
+
+Overall the project was a success and the POC proved a viable MVP for the client to attract investors. The client managed to secure funding and the application was built by a small team I helped create. Whilst the bulk of the code is propietory and bound by an NDA what I can share is the Swift 3 code example below. This is how to draw a boundry around a set of coordinates pulled from Core data, It looks like a small chunk but under a MVCS pattern each "Bulk" workload is farmed off to the service class it represents i.e. UserService, CoreDataService. This keeps controllers clean to "Control" and decouples logic allowing for separation of concerns.
+
 
 {% highlight swift %}
-var doggyName: String {
-  get {
-    if self.dogName == "" || self.dogName == nil {
-      return NSLocalizedString("your dog", comment: "")
-    } else {
-      return self.dogName!
+var fences: [Fence] = [
+  // Array of example fences pulled from data store, radius value in miles
+  Fence(title: "Fence 1", coordinate: [48.5074, 10.1278], radius: 1.0),
+  Fence(title: "Fence 2", coordinate: [48.5074, 10.1278], radius: 1.0),
+]
+
+func createRegions() {
+  // Check if can monitor regions
+  if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+
+    // Clear any existing regions
+    for monitored in locationManager.monitoredRegions {
+      locationManager.stopMonitoring(for: monitored)
     }
+
+    // Loop through fences array and define regions for a MKMapView object
+    for fence in fences {    
+      let coordinate  = CLLocationCoordinate2DMake(fence.coordinate[0], fence.coordinate[1])
+      let region      = CLCircularRegion(center: CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude), radius: fence.radius, identifier: fence.title)
+      region.notifyOnEntry = true
+      region.notifyOnExit  = true
+      locationManager.startMonitoring(for: region)
+      let circle = MKCircle(center: coordinate, radius: fence.radius)
+      mapView.add(circle)     
+    }
+
+  } else {
+    print("[APP]: Unable to track user regions")
   }
+}
+
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+  let circleRenderer = MKCircleRenderer(overlay: overlay)
+  circleRenderer.strokeColor = .blue
+  circleRenderer.fillColor   = .orange
+  circleRenderer.lineWidth   = 1.0
+  return circleRenderer
 }
 {% endhighlight %}
 
-## Some great heading (h2)
+*I plan to release an article in future on how I manage file structures in iOS.*
 
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
-
-Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
-## Another great heading (h2)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
-
-### Some great subheading (h3)
-
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum.
-
-Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
-
-### Some great subheading (h3)
-
-Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
-> This quote will change your life. It will reveal the secrets of the universe, and all the wonders of humanity. Don't misuse it.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt.
-
-### Some great subheading (h3)
-
-Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.
-
-<section class="download-box">
+<!-- <section class="download-box">
   <h3>Download the full Xcode project</h3>
-</section>
+</section> -->

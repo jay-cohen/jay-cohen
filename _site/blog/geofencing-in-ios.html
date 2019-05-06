@@ -8,15 +8,15 @@
 <meta property="og:title" content="Geofencing in iOS" />
 <meta name="author" content="Jay Cohen" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit." />
-<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit." />
+<meta name="description" content="When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising." />
+<meta property="og:description" content="When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising." />
 <link rel="canonical" href="http://localhost:4000/blog/geofencing-in-ios" />
 <meta property="og:url" content="http://localhost:4000/blog/geofencing-in-ios" />
 <meta property="og:site_name" content="Freelance App Developer, iPhone, iPad, Apple Watch, Apple TV - UK" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-25T00:00:00+01:00" />
 <script type="application/ld+json">
-{"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.","author":{"@type":"Person","name":"Jay Cohen"},"@type":"BlogPosting","url":"http://localhost:4000/blog/geofencing-in-ios","headline":"Geofencing in iOS","dateModified":"2019-04-25T00:00:00+01:00","datePublished":"2019-04-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/geofencing-in-ios"},"@context":"http://schema.org"}</script>
+{"description":"When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.","author":{"@type":"Person","name":"Jay Cohen"},"@type":"BlogPosting","url":"http://localhost:4000/blog/geofencing-in-ios","headline":"Geofencing in iOS","dateModified":"2019-04-25T00:00:00+01:00","datePublished":"2019-04-25T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/geofencing-in-ios"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Freelance App Developer, iPhone, iPad, Apple Watch, Apple TV - UK" /><link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/assets/img/favicon/favicon-32x32.png">
@@ -26,7 +26,7 @@
 <body><header class="site-header" role="banner">
   <section class="availability">
     <div class="container">
-      <a href="mailto:jay-cohen@outlook.com?subject=June booking">
+      <a href="mailto:hello@jay-ios.com?subject=June booking">
         <h2>Availability for hire in June. <strong>Book now</strong></h2>
       </a>
     </div>
@@ -64,51 +64,63 @@
             </time>
         </header>
         <div class="post-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
+            <p>When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.</p>
 
-<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">doggyName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
-  <span class="k">get</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="k">self</span><span class="o">.</span><span class="n">dogName</span> <span class="o">==</span> <span class="s">""</span> <span class="o">||</span> <span class="k">self</span><span class="o">.</span><span class="n">dogName</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="kt">NSLocalizedString</span><span class="p">(</span><span class="s">"your dog"</span><span class="p">,</span> <span class="nv">comment</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="k">self</span><span class="o">.</span><span class="n">dogName</span><span class="o">!</span>
+<h2 id="inital-problems">Inital problems</h2>
+<p>The main issue faced was around accuracy. iPhones are currently accurate to a radius of 10-15m and uses on average 2 cell tower GPS locations to provide the coordinates that pin point the device. While it isn’t true GPS it’s still an accurate way to determine a users location. The second issue would be the drawing of these boundries inconjunction with receiving notifications (performance issue). Having gone through various scenarios the solution to store and cache data once a user had entered a location seemed the best of the bunch. Under this solution the server and the device interaction would be small (push notification size) and keep costs low at server level.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>Having advised on how the back end services would handle the transferring of data between entites the POC was created. The POC was delivered ahead of schedule and testing began. Both myself and the client visited various locations throughout the UK and with the back end guys on speakerphone we tested Guerrilla style. Under testing we found an issue relating to device notification queuing and removal, but that was an easy fix. If that’s one takeaway from this article is that you should test your applications under the scenario that it would be used in, don’t just rely on the simulator.</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>Overall the project was a success and the POC proved a viable MVP for the client to attract investors. The client managed to secure funding and the application was built by a small team I helped create. Whilst the bulk of the code is propietory and bound by an NDA what I can share is the Swift 3 code example below. This is how to draw a boundry around a set of coordinates pulled from Core data, It looks like a small chunk but under a MVCS pattern each “Bulk” workload is farmed off to the service class it represents i.e. UserService, CoreDataService. This keeps controllers clean to “Control” and decouples logic allowing for separation of concerns.</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">fences</span><span class="p">:</span> <span class="p">[</span><span class="kt">Fence</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="c1">// Array of example fences pulled from data store, radius value in miles</span>
+  <span class="kt">Fence</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Fence 1"</span><span class="p">,</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="p">[</span><span class="mf">48.5074</span><span class="p">,</span> <span class="mf">10.1278</span><span class="p">],</span> <span class="nv">radius</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">),</span>
+  <span class="kt">Fence</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Fence 2"</span><span class="p">,</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="p">[</span><span class="mf">48.5074</span><span class="p">,</span> <span class="mf">10.1278</span><span class="p">],</span> <span class="nv">radius</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="kd">func</span> <span class="nf">createRegions</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Check if can monitor regions</span>
+  <span class="k">if</span> <span class="kt">CLLocationManager</span><span class="o">.</span><span class="nf">isMonitoringAvailable</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">CLCircularRegion</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Clear any existing regions</span>
+    <span class="k">for</span> <span class="n">monitored</span> <span class="k">in</span> <span class="n">locationManager</span><span class="o">.</span><span class="n">monitoredRegions</span> <span class="p">{</span>
+      <span class="n">locationManager</span><span class="o">.</span><span class="nf">stopMonitoring</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">monitored</span><span class="p">)</span>
     <span class="p">}</span>
+
+    <span class="c1">// Loop through fences array and define regions for a MKMapView object</span>
+    <span class="k">for</span> <span class="n">fence</span> <span class="k">in</span> <span class="n">fences</span> <span class="p">{</span>    
+      <span class="k">let</span> <span class="nv">coordinate</span>  <span class="o">=</span> <span class="kt">CLLocationCoordinate2DMake</span><span class="p">(</span><span class="n">fence</span><span class="o">.</span><span class="n">coordinate</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fence</span><span class="o">.</span><span class="n">coordinate</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+      <span class="k">let</span> <span class="nv">region</span>      <span class="o">=</span> <span class="kt">CLCircularRegion</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="n">coordinate</span><span class="o">.</span><span class="n">latitude</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="n">coordinate</span><span class="o">.</span><span class="n">longitude</span><span class="p">),</span> <span class="nv">radius</span><span class="p">:</span> <span class="n">fence</span><span class="o">.</span><span class="n">radius</span><span class="p">,</span> <span class="nv">identifier</span><span class="p">:</span> <span class="n">fence</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+      <span class="n">region</span><span class="o">.</span><span class="n">notifyOnEntry</span> <span class="o">=</span> <span class="kc">true</span>
+      <span class="n">region</span><span class="o">.</span><span class="n">notifyOnExit</span>  <span class="o">=</span> <span class="kc">true</span>
+      <span class="n">locationManager</span><span class="o">.</span><span class="nf">startMonitoring</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">region</span><span class="p">)</span>
+      <span class="k">let</span> <span class="nv">circle</span> <span class="o">=</span> <span class="kt">MKCircle</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="n">coordinate</span><span class="p">,</span> <span class="nv">radius</span><span class="p">:</span> <span class="n">fence</span><span class="o">.</span><span class="n">radius</span><span class="p">)</span>
+      <span class="n">mapView</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>     
+    <span class="p">}</span>
+
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"[APP]: Unable to track user regions"</span><span class="p">)</span>
   <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="p">,</span> <span class="n">rendererFor</span> <span class="nv">overlay</span><span class="p">:</span> <span class="kt">MKOverlay</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MKOverlayRenderer</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">circleRenderer</span> <span class="o">=</span> <span class="kt">MKCircleRenderer</span><span class="p">(</span><span class="nv">overlay</span><span class="p">:</span> <span class="n">overlay</span><span class="p">)</span>
+  <span class="n">circleRenderer</span><span class="o">.</span><span class="n">strokeColor</span> <span class="o">=</span> <span class="o">.</span><span class="n">blue</span>
+  <span class="n">circleRenderer</span><span class="o">.</span><span class="n">fillColor</span>   <span class="o">=</span> <span class="o">.</span><span class="n">orange</span>
+  <span class="n">circleRenderer</span><span class="o">.</span><span class="n">lineWidth</span>   <span class="o">=</span> <span class="mf">1.0</span>
+  <span class="k">return</span> <span class="n">circleRenderer</span>
 <span class="p">}</span></code></pre></figure>
 
-<h2 id="some-great-heading-h2">Some great heading (h2)</h2>
+<p><em>I plan to release an article in future on how I manage file structures in iOS.</em></p>
 
-<p>Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.</p>
-
-<p>Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
-
-<h2 id="another-great-heading-h2">Another great heading (h2)</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
-
-<h3 id="some-great-subheading-h3">Some great subheading (h3)</h3>
-
-<p>Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum.</p>
-
-<p>Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.</p>
-
-<h3 id="some-great-subheading-h3-1">Some great subheading (h3)</h3>
-
-<p>Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
-
-<blockquote>
-  <p>This quote will change your life. It will reveal the secrets of the universe, and all the wonders of humanity. Don’t misuse it.</p>
-</blockquote>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt.</p>
-
-<h3 id="some-great-subheading-h3-2">Some great subheading (h3)</h3>
-
-<p>Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.</p>
-
-<section class="download-box">
+<!-- <section class="download-box">
   <h3>Download the full Xcode project</h3>
-</section>
+</section> -->
 
           </div>
         <a class="u-url" href="/blog/geofencing-in-ios" hidden></a>
