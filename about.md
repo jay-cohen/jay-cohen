@@ -25,7 +25,7 @@ description: My favourite place is the Isle of Arran, there’s something about 
             </div>
             <div class="six columns">
                 <img src="/assets/img/arran@2x.jpg" alt="Picture of myself in Arran" class="arran">
-                <img src="/assets/img/me@2x.jpg" alt="Picture of myself in Arran" class="me">
+                <img src="/assets/img/Me@2x.jpg" alt="Picture of myself in Arran" class="me">
             </div>
         </div>
     </div>
