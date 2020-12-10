@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 10 Xcode & Swift tips
-permalink: /blog/10-Xcode-&-swift-tips-every-developer-must-know
+permalink: /blog/10-Xcode-&-swift-tips-every-developer-must-know/
 author: Jay Cohen
 tags: iOS, Xcode, Swift
 description: Being an iOS developer for a number of years I’ve accumulated a bunch of Swift & Xcode tips to speed up the development process. The list below should be perfect for any IOS developer just starting out after a Udemy course or those looking to get the most out of wonderful Xcode.

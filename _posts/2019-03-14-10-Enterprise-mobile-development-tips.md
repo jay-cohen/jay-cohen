@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 10 tips for developers
-permalink: /blog/10-Enterprise-mobile-development-tips
+permalink: /blog/10-Enterprise-mobile-development-tips/
 author: Jay Cohen
 tags: iOS, Enterprise, Swift
 description: Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SwiftUI Can Help Stop Crashes
-permalink: /blog/2020-11-18-How-SwiftUI-Can-Help-Solve-App-Crashes
+permalink: /blog/How-SwiftUI-Can-Help-Solve-App-Crashes/
 author: Jay Cohen
 description: Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and also how simple this could be achieved today in SwiftUI.
 ---

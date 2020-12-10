@@ -320,8 +320,8 @@ footer {
         color: $color-four;
         opacity: .2;
         font-weight: $font-bold;
-        font-size: 60px;
-        line-height: 68px;
+        font-size: 48px;
+        line-height: 58px;
         @media screen and (min-width: $tablet) {
             font-size: 120px;
             line-height: 140px;
@@ -357,6 +357,11 @@ footer {
     .staggered {
         @media screen and (min-width: $tablet) {
             padding-top: 10%;
+        }
+    }
+    .post-title {
+        a {
+            line-height: 31px;
         }
     }
     a {

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Geofencing in iOS
-permalink: /blog/geofencing-in-ios
+permalink: /blog/geofencing-in-ios/
 author: "Jay Cohen"
 tags: iOS, location
 ---
