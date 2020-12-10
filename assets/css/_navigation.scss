@@ -1,133 +1,67 @@
-.navigation {
-    margin-top: 40px;
-    img {
-        display: block;
-        width: 47%;
-        height: auto;
-        margin: 0 auto;
-        @media screen and (min-width: $mobile) {
-            margin: 0;
-            margin-top: 5px;
-            display: inline;
-            width: 120px;
-        }
-    }
-    .main-nav {
-        padding: $smallPadding;
-        text-align: center;
-        margin-top: 10px;
-        @media screen and (min-width: $mobile) {
-            margin-top: 0;
-            padding-top: 0;
-        }
-        ul {
-            margin: 0;
-            @media screen and (min-width: $mobile) {
-                text-align: right;
-            }
-            li {
-                position: relative;
-                list-style-type: none;
-                display: inline;
-                padding-right: 20px;
-                font-family: $gill;
-                font-weight: normal;
-                @media screen and (min-width: $mobile) {
-                    padding-right: 30px;
-                }
-                a {
-                    color: $baseColor;
-                    text-decoration: none;
-                }
-            &:last-child {
-                padding-right: 0;
-            }
-            }
-            .active {
-                position: absolute;
-                width: 20px;
-                height: 2px;
-                bottom: -10px;
-                left: 15%;
-                background-color: $orange;
-            }
-            .active-blog {
-                position: absolute;
-                width: 20px;
-                height: 2px;
-                bottom: -10px;
-                left: 6%;
-                background-color: $orange;
-            }
-            .active-contact {
-                position: absolute;
-                width: 20px;
-                height: 2px;
-                bottom: -10px;
-                left: 33%;
-                background-color: $orange;
-            }
-        }
-    }
-}
-
-.work-nav {
-    padding-bottom: 38px;
+.main-nav {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: auto;
+    transition: 0.3s;
+    z-index: 1;
     @media screen and (min-width: $tablet) {
-        padding-top: 38px;
-        padding-bottom: 74px;
+        top: 0;
     }
     @media screen and (min-width: $desktop) {
-        padding-top: 78px;
-        padding-bottom: 148px;
+        top: -2px;
     }
     ul {
-        margin-left: 20px;
+       display: none;
+        position: relative;
         @media screen and (min-width: $tablet) {
-            margin-left: 0;
+            .nav-group {
+                margin-top: 48px;
+            }
         }
         li {
-            display: block;
-            list-style: none;
-            font-family: $gill;
-            font-size: 20px;
-            font-weight: normal;
-            padding-bottom: 10px;
-            transition: all 0.5s ease 0.1s;
-            @media screen and (min-width: $mobile) {
-                padding-bottom: 17px;
-                margin-bottom: 0;
-            }
+            background: url(../img/nav-polygon.svg) no-repeat center;
+            cursor: pointer;
+            width: 85px;
+            height: 85px;
+            position: absolute;
             a {
-                position: relative;
                 text-decoration: none;
-                color: $baseColor;
-                display: block;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 10px;
-                    left: -20px;
-                    top: 49%;
-                    height: 2px;
-                    background-color: $orange;
-                    opacity: 0;
-                    transition: all .5s ease 0.1s;
-                }
-                &:hover {
-                    &::before {
-                        opacity: 1;
-                        left: -15px;
-                        height: 2px;
-                    }
-                }
+                color: $color-two;
+                display:block;
+                text-align: center;
+                padding: 34px 0;
+                font-weight: $font-medium;
             }
-            &:hover {
-                margin-left: 14px;
-                display: block;
-            }
-            
+        }
+        :nth-child(1) {
+            right: 38px;
+            top: 20px;
+        }
+        :nth-child(2) {
+            right: 76px;
+            top: 86px;
+        }
+        :nth-child(3) {
+            right: 0px;
+            top: 86px;
+        }
+        :nth-child(4) {
+            right: 38px;
+            top: 152px;
         }
         
+    }
+    .nav-btn {
+        background: url(../img/mobile-nav.svg) no-repeat center;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top:-14px;
+        right: 24px;
+        @media screen and (min-width: $mobile) {
+            top: 36px;
+        }
     }
 }

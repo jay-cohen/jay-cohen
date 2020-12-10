@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 10 Xcode & Swift tips every developer must know
+title: 10 Xcode & Swift tips
 permalink: /blog/10-Xcode-&-swift-tips-every-developer-must-know
 author: Jay Cohen
 tags: iOS, Xcode, Swift
@@ -9,7 +9,7 @@ description: Being an iOS developer for a number of years I’ve accumulated a b
 
 Being an iOS developer for a number of years I’ve accumulated a bunch of Swift & Xcode tips to speed up the development process. The list below should be perfect for any IOS developer just starting out after a Udemy course or those looking to get the most out of wonderful Xcode.
 
-> Looking for sounds for your app? Check out a new pack I’ve created with over 100 UI sounds for $7. http://soundsuigood.com/
+> Looking for sounds for your app? Check out a new pack I’ve created with over 100 UI sounds for $7.  <a href="http://soundsuigood.com" title="Sounds UI Good" target="_blank">http://soundsuigood.com</a>
 
 ## Xcode & Swift tips
 1. Constantly learn and challenge yourself. I hate to sound cliche on the first tip but this is incredibly important. iOS and Swift are an ever changing entity and you’ll need to keep up with what’s happening. I’ve included a list at the end of invaluable resources that will help in keeping you up to date.

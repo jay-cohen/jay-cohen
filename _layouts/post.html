@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: page
 ---
-<section class="blog">
+<section class="page">
   <article class="post">
       <div class="container">
+        <div class="back-arrow"><a onclick="window.history.back()">Back</a><br><br><br><br><br></div>
         <header class="post-header center">
             <h1 class="post-title">{{ page.title | escape }}</h1>
             <time datetime="{{ page.date | date_to_xmlschema }}">

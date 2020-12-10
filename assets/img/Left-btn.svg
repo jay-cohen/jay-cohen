@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="46px" viewBox="0 0 40 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Left-BTN</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-840.000000, -2684.000000)">
+            <g id="Testimonials-Block" transform="translate(120.000000, 2454.000000)">
+                <g id="Left-BTN" transform="translate(717.000000, 230.000000)">
+                    <polygon id="Polygon" fill="#F77F00" transform="translate(23.000000, 23.000000) rotate(-180.000000) translate(-23.000000, -23.000000) " points="23 0 42.9185843 11.5 42.9185843 34.5 23 46 3.08141571 34.5 3.08141571 11.5"></polygon>
+                    <polygon id="Triangle" fill="#003049" transform="translate(20.500000, 23.241128) rotate(-90.000000) translate(-20.500000, -23.241128) " points="20.5 17.4822569 29 29 12 29"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

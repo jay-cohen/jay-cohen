@@ -4,7 +4,5 @@
 
 layout: home
 exclude_rss: true
-title: Freelance iOS, Watch OS, TV OS Developer.
+title: Jay Cohen
 ---
-
-Based in **Yorkshire** I’ve been lucky enough to work with clients across the world building amazing products in all kinds of sectors including not for profit and sports apparel. I’ve also self published my own ideas including **Pawey** and **SoundsUIGood**.

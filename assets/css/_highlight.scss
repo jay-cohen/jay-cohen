@@ -1,4 +1,4 @@
-figure.highlight { background-color: #272822; font-size: $smallFont; padding: 1px 15px; line-height: 1.2em; margin: 2em 0; border-radius: 1em;  color: #fff; overflow: auto; }
+figure.highlight { background-color:$color-five; font-size: $font-small; padding: 20px 33px; line-height: 1.2em; margin: 2em 0; border-radius: 1em;  color: #fff; overflow: auto; border: 1px solid $color-one; }
 .hll { background-color: #49483e }
 .c { color: #75715e } /* Comment */
 .err { color: #92A1B1;} /* Error */
@@ -7,10 +7,10 @@ figure.highlight { background-color: #272822; font-size: $smallFont; padding: 1p
 .n { color: #f8f8f2 } /* Name */
 .o { color: #f92672 } /* Operator */
 .p { color: #f8f8f2 } /* Punctuation */
-.cm { color: #75715e } /* Comment.Multiline */
-.cp { color: #75715e } /* Comment.Preproc */
-.c1 { color: #75715e } /* Comment.Single */
-.cs { color: #75715e } /* Comment.Special */
+.cm { color:$color-three } /* Comment.Multiline */
+.cp { color:$color-three } /* Comment.Preproc */
+.c1 { color:$color-three } /* Comment.Single */
+.cs { color: $color-three } /* Comment.Special */
 .ge { font-style: italic } /* Generic.Emph */
 .gs { font-weight: bold } /* Generic.Strong */
 .kc { color: #66d9ef } /* Keyword.Constant */

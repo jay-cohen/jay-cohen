@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>SwiftUI Can Help Stop Crashes | Freelance App Developer, Apple iPhone, iPad, Apple Watch, Apple TV Developer.</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="SwiftUI Can Help Stop Crashes" />
+<meta name="author" content="Jay Cohen" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and also how simple this could be achieved today in SwiftUI." />
+<meta property="og:description" content="Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and also how simple this could be achieved today in SwiftUI." />
+<link rel="canonical" href="https://jcohen.uk/blog/2020-11-18-How-SwiftUI-Can-Help-Solve-App-Crashes" />
+<meta property="og:url" content="https://jcohen.uk/blog/2020-11-18-How-SwiftUI-Can-Help-Solve-App-Crashes" />
+<meta property="og:site_name" content="Freelance App Developer, Apple iPhone, iPad, Apple Watch, Apple TV Developer." />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-18T00:00:00+00:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jay Cohen"},"url":"https://jcohen.uk/blog/2020-11-18-How-SwiftUI-Can-Help-Solve-App-Crashes","mainEntityOfPage":{"@type":"WebPage","@id":"https://jcohen.uk/blog/2020-11-18-How-SwiftUI-Can-Help-Solve-App-Crashes"},"headline":"SwiftUI Can Help Stop Crashes","dateModified":"2020-11-18T00:00:00+00:00","datePublished":"2020-11-18T00:00:00+00:00","description":"Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and also how simple this could be achieved today in SwiftUI.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://jcohen.uk/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="https://jcohen.uk/feed.xml" title="Freelance App Developer, Apple iPhone, iPad, Apple Watch, Apple TV Developer." /><link rel="apple-touch-icon" sizes="180x180" href="https://jcohen.uk/assets/img/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://jcohen.uk/assets/img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://jcohen.uk/assets/img/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="https://jcohen.uk/assets/img/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="https://jcohen.uk/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="https://jcohen.uk/assets/img/favicons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="https://jcohen.uk/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <div class="background-page">
+    <main aria-label="content">
+      <header>
+        <div class="logo">
+          <a href="https://jcohen.uk"><img src="https://jcohen.uk/assets/img/Home-Logo.svg"
+              alt="Jay Cohen - Freelance App Developer"></a>
+        </div>
+        <nav class="main-nav">
+          <div class="nav-btn"></div>
+          <ul>
+              <div class="nav-group">
+                <li><a href="https://jcohen.uk/#about">About</a></li>
+                <li><a href="https://jcohen.uk/#work">Work</a></li>
+                <li><a href="https://jcohen.uk/#hire">Hire</a></li>
+                <li><a href="https://jcohen.uk/projects">Projects</a></li>
+              </div>
+          </ul>
+      </nav>
+      </header>
+      <div class="container">
+
+        <section class="page">
+  <article class="post">
+      <div class="container">
+        <div class="back-arrow"><a onclick="window.history.back()">Back</a><br><br><br><br><br></div>
+        <header class="post-header center">
+            <h1 class="post-title">SwiftUI Can Help Stop Crashes</h1>
+            <time datetime="2020-11-18T00:00:00+00:00">Nov 18, 2020
+            </time>
+        </header>
+        <div class="post-content">
+            <p>Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and how simple this could be achieved today in SwiftUI. To give an example the complexity of the project. One specific element required nested UICollectionView’s 5 levels deep, which passed data back and forth up the stack to a HeaderView. It also resized dynamically just to add some extra juice.</p>
+
+<p>Given that Storyboards in iOS have their quirks, what we have today in terms of SwiftUI make even the complex layouts easy to build. What I like about SwiftUI is that it’s far easier to learn for newbies, instant preview of UI design, and that it appears (from my testing) to be easier to compile for Xcode. This reduce of build times means the work can be done much more quickly, making the cost cheaper to clients.</p>
+
+<p>Currently SwiftUI is in 2.0 which brings the important <b>Lazy</b> back into the library, along with extra controls and components. I’m a big fan of lazy loading any element on screen as it seriously helps reduce stutters on your application when you’ve multiple components inside a ScrollView. A new modifier called <strong>onChange</strong>  which allows you to listen to <strong>@State</strong> changes and run any methods you need. This alone would have made the previous complex project mentioned above a doddle.</p>
+
+<p>The main benefit I see to using SwiftUI is how it addresses most UI crashes is the combination of it’s implementation and how it uses <strong>@State</strong> and <strong>@observedObject</strong>. Obviously if something is causing your application to pause or crash due to misallocation of memory or threading issues then SwiftUI won’t help. A secondary benefit I also see is how it seamlessly merges with existing UIKit elements where you have complexity in your UI. For instance, any occurance where I need complete control of lists in a Pre &amp; Post View layer I would still opt for a standard UI Component layer. <strong>@State</strong> and <strong>@ObservedObject</strong> can only get you so far. None of the projects I’ve worked on since have required this level of development, but I’m ready for it.</p>
+
+          </div>
+        <a class="u-url" href="/blog/2020-11-18-How-SwiftUI-Can-Help-Solve-App-Crashes" hidden></a>
+        <div class="back-arrow"><a onclick="window.history.back()">Back</a></div>
+    </div>
+  </article>
+</section>
+
+      </div>
+    </main><footer role="complementary">
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <p>&copy; 2020 - JOC Digital Ltd (11914550).  All rights reserved.</p> 
+            </div>
+            <div class="one-half column">
+                <ul>
+                    <li class="color-three"><a href="https://jcohen.uk/#about" title="about">About</a>.</li>
+                    <li class="color-three"><a href="https://jcohen.uk/#work" title="work">Work</a>.</li>
+                    <li class="color-three"><a href="https://jcohen.uk/#hire" title="hire">Hire</a>.</li>
+                    <li class="color-three"><a href="https://jcohen.uk/blog" title="blog">Blog</a>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></div>
+  <div class="background-footer"></div>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://jcohen.uk/assets/js/script.js"></script>
+</body>
+</html>

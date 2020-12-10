@@ -1,226 +1,33 @@
-@font-face {
-    font-family: 'GraphikLight';
-    src: url(../fonts/Graphik-Light.eot);
-    src: url(../fonts/Graphik-Light.eot) format("embedded-opentype"),url(../fonts/Graphik-Light.woff2) format("woff2"),url(../fonts/Graphik-Light.woff) format("woff"),url(../fonts/Graphik-Light.ttf) format("truetype"),url(../fonts/Graphik-Light.svg#Graphik-Light) format("svg");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap');
+
+
+h1, h3, h4, h5, h6 {
+    font-weight: $font-semi-bold;
+    line-height: 54px;
 }
 
-@font-face {
-    font-family: 'GraphikRegular';
-    src: url(../fonts/Graphik-Regular.eot);
-    src: url(../fonts/Graphik-Regular.eot) format("embedded-opentype"),url(../fonts/Graphik-Regular.woff2) format("woff2"),url(../fonts/Graphik-Regular.woff) format("woff"),url(../fonts/Graphik-Regular.ttf) format("truetype"),url(../fonts/Graphik-Regular.svg#Graphik-Regular) format("svg");
-}
-
-// BASE 
-
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
-}
-
-::selection {
-    background: #999;
-    color: #fff;
-}
-
-body {
-    font-family: $gill;
-    font-size: $normalFont;
-    font-weight: 300;
-    line-height: 26px;
-    color: lighten($color: $baseColor, $amount: 20%);
-}
-
-ul {
-    li {
-        list-style: none;
-        padding-right: 10px;
+h2 {
+    font-weight: $font-medium;
+    font-size: 40px;
+    padding-bottom: 48px;
+    line-height: 43px;
+    @media (min-width: $tablet) {
+        padding-bottom: 18px;
+    }
+    @media (min-width: $desktop) {
+        padding-bottom: 48px;
     }
 }
 
-a , a:visited {
-    color: $baseColor;
-    text-decoration: none;
-    font-weight: 500;
-}
-a:hover {
-    color: lighten($color: $baseColor, $amount: 30%); 
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $gill;
-    font-weight: 300;
-    line-height: 1.2em;
-    margin-bottom: 14px;
-    letter-spacing: 0px;
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: normal;
+.faded {
+    font-weight: $font-bold;
+    font-size: 120px;
+    opacity: .2;
+    line-height: 78px;
+    color: $color-four;
 }
 
 p {
-    margin-bottom: 32px;
-}
-
-// CUSTOM
-
-.site-header {
-    .availability {
-        h2 {
-            font-size: $smallFont;
-            font-weight: normal;
-            text-align: center;
-            letter-spacing: 0;
-            padding-top: $smallPadding;
-            padding-bottom: $smallPadding;
-            margin:0;
-            line-height: inherit;
-        }
-        strong {
-            text-decoration: underline;
-            font-weight: normal;
-        }
-    }
-}
-
-.intro {
-    h1 {
-        font-family: $graphik;
-        font-weight: 300;
-        font-size: 32px;
-        margin-bottom: 24px;
-    }
-    p {
-        font-size: $higherFont;
-        line-height: 28px;
-    }
-}
-
-main {
-    h2 {
-        font-family: $gill;
-        font-weight: normal;
-        font-size: 30px;
-    }
-    h4 {
-        font-family: $gill;
-        font-weight: normal;
-        font-size: 20px;
-    }
-}
-
-.page {
-    margin-top: 0;
-    @media screen and (min-width: $mobile) {
-        margin-top: 39px;
-    }
-    h1 {
-        font-family: $graphik;
-        font-size: 28px;
-        font-weight: 300;
-        margin-top: 22px;
-        margin-bottom: 28px;
-        text-align: left;
-        @media screen and (min-width: $mobile) {
-            margin: 38px 0 18px 0;
-            text-align: left;
-            display: block;
-        }
-        @media screen and (min-width: $tablet) {
-            margin: 38px 0;
-        }
-    }
-    h5 {
-        font-size: $normalFont;
-        color: lighten($color: $baseColor, $amount: 25%);
-        font-weight: normal;
-        text-align: center;
-        @media screen and (min-width: $tablet) {
-            text-align: left;
-        }
-    }
-    .email-link {
-        font-size: 32px;
-        text-align: center;
-        margin: 14px 0 24px 0;
-        @media screen and (min-width: $tablet) {
-            text-align: left;
-            font-size: 40px;
-        }
-        a {
-            text-decoration: underline;
-        }
-    }
-}
-
-.work {
-    h4 {
-        @media screen and (min-width: $mobile) {
-            margin-bottom: 10px;
-            margin-top: 40px;
-        }
-    }
-}
-
-.guidelines {
-    h1 {
-        @media screen and (min-width: $mobile) {
-            margin-bottom: 18px;  
-        }
-    }
-    h2 {
-       font-size: 20px;
-       margin-top: 0;
-       margin-bottom: 38px;
-       font-style: italic;
-       @media screen and (min-width: $mobile) {
-           margin-bottom: 75px;  
-       }
-    }
-}
-
-
-article {
-    .post-header {
-        .post-title {
-            font-size: 28px;
-            font-weight: 300;
-            @media screen and (min-width: $tablet) {
-                text-align: center;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    }
-    h2, h3 {
-        font-size: 18px;
-    }
-}
-
-footer {
-    font-size: 14px;
-    .secondary-text {
-        color: lighten($color: $baseColor, $amount: 50%);
-        font-weight: normal; 
-        text-align: center;
-        @media screen and (min-width: $tablet) {
-            text-align: right; 
-            margin-top: 0;
-            font-size: 12px;
-        }
-        @media screen and (min-width: $desktop) {
-            font-size: 14px;
-        }
-    }
-    .small-text {
-        text-align: center;
-        font-size: 13px;
-        margin-top: 0;
-        @media screen and (min-width: $tablet) {
-            margin-top: 14px;
-        } 
-    }
+    font-weight: $font-regular;
+    line-height: 28px;
 }

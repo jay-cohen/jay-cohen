@@ -2,38 +2,7 @@
 layout: default
 ---
 
-<section class="intro">
-  <div class="container">
-      <div class="row">
-          <div class="six columns">
-              {%- if page.title -%}
-              <h1 class="page-heading">{{ page.title }}</h1>
-            {%- endif -%}
-            {{ content }}
-          </div> 
-      </div>
-  </div>
-</section>
-<div class="dotted-box"></div>
-<section class="work-nav">
-  <div class="container">
-    <div class="row">
-      <div class="four columns">
-        <ul>
-          <li><a href="#sensd" id="sensd">Sens'd</a></li>
-          <li><a href="#pawey">Pawey</a></li>
-          <li><a href="#take-card">Take Card</a></li>
-          <li><a href="#sounds">Sounds UI Good</a></li>
-          <li><a href="#mando">Man do</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-{%- include _work/sensd.html -%}
-{%- include _work/pawey.html -%}
-{%- include _work/take-card.html -%}
-{%- include _work/soundsuigood.html -%}
-{%- include _work/man-do.html -%}
-{%- include clients.html -%}
+{%- include _section/intro.html -%}
+{%- include _section/work.html -%}
+{%- include _section/testimonials.html -%}
+{%- include _section/contact.html -%}

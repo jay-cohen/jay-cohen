@@ -1,1 +1,1 @@
-Sitemap: http://jay-ios.com/sitemap.xml
+Sitemap: https://jcohen.uk/sitemap.xml

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="52px" viewBox="0 0 44 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Mobile nav Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project" transform="translate(-46.000000, -26.000000)">
+            <g id="Mobile-nav-Copy" transform="translate(44.000000, 28.000000)">
+                <path d="M24,-0.577350269 L45.2846097,11.7113249 L45.2846097,36.2886751 L24,48.5773503 L2.71539031,36.2886751 L2.71539031,11.7113249 L24,-0.577350269 Z" id="Polygon" stroke="#CB6900" fill="#F77F00"></path>
+                <path d="M22.763,32.352 C21.0763249,32.352 19.6243394,31.7800057 18.407,30.636 L19.595,27.688 C20.4970045,28.5240042 21.3623292,28.942 22.191,28.942 C22.9536705,28.942 23.5494979,28.6780026 23.9785,28.15 C24.4075021,27.6219974 24.622,26.8960046 24.622,25.972 L24.622,13.85 L28.186,13.85 L28.186,26.896 C28.186,28.6266753 27.7056715,29.9686619 26.745,30.922 C25.7843285,31.8753381 24.4570085,32.352 22.763,32.352 Z" id="J" fill="#003049" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

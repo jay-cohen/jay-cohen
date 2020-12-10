@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="526px" viewBox="0 0 1440 526" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>footer-page</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="46.9750653%" cy="55.2188783%" fx="46.9750653%" fy="55.2188783%" r="159.489901%" id="radialGradient-1">
+            <stop stop-color="#004468" offset="0%"></stop>
+            <stop stop-color="#002132" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="46.9750653%" cy="55.2188783%" fx="46.9750653%" fy="55.2188783%" r="159.489901%" id="radialGradient-2">
+            <stop stop-color="#F77F00" offset="0%"></stop>
+            <stop stop-color="#D62828" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Guidelines" transform="translate(0.000000, -1287.000000)">
+            <g id="background-page" transform="translate(-344.000000, -784.000000)">
+                <g id="footer-page" transform="translate(0.000000, 2071.000000)">
+                    <g id="Group-4-Copy-2" opacity="0.3" fill="url(#radialGradient-1)">
+                        <polygon id="Polygon-Copy-19" points="471 199 581.851252 263 581.851252 391 471 455 360.148748 391 360.148748 263"></polygon>
+                        <polygon id="Polygon-Copy-21" points="585 398 695.851252 462 695.851252 590 585 654 474.148748 590 474.148748 462"></polygon>
+                        <polygon id="Polygon-Copy-25" points="357 0 467.851252 64 467.851252 192 357 256 246.148748 192 246.148748 64"></polygon>
+                        <polygon id="Polygon-Copy-20" points="242 199 352.851252 263 352.851252 391 242 455 131.148748 391 131.148748 263"></polygon>
+                        <polygon id="Polygon-Copy-22" points="356 398 466.851252 462 466.851252 590 356 654 245.148748 590 245.148748 462"></polygon>
+                        <polygon id="Polygon-Copy-19" points="929 199 1039.85125 263 1039.85125 391 929 455 818.148748 391 818.148748 263"></polygon>
+                        <polygon id="Polygon-Copy-23" points="1043 398 1153.85125 462 1153.85125 590 1043 654 932.148748 590 932.148748 462"></polygon>
+                        <polygon id="Polygon-Copy-27" points="815 0 925.851252 64 925.851252 192 815 256 704.148748 192 704.148748 64"></polygon>
+                        <polygon id="Polygon-Copy-20" points="700 199 810.851252 263 810.851252 391 700 455 589.148748 391 589.148748 263"></polygon>
+                        <polygon id="Polygon-Copy-24" points="814 398 924.851252 462 924.851252 590 814 654 703.148748 590 703.148748 462"></polygon>
+                        <polygon id="Polygon-Copy-28" points="586 0 696.851252 64 696.851252 192 586 256 475.148748 192 475.148748 64"></polygon>
+                    </g>
+                    <g id="Group-Copy-5" transform="translate(1368.000000, 167.000000)" fill="url(#radialGradient-2)">
+                        <polygon id="Polygon" points="242 198 352.851252 262 352.851252 390 242 454 131.148748 390 131.148748 262"></polygon>
+                        <polygon id="Polygon-Copy-19" points="128 0 238.851252 64 238.851252 192 128 256 17.1487483 192 17.1487483 64"></polygon>
+                        <polygon id="Polygon-Copy-2" points="471 197 581.851252 261 581.851252 389 471 453 360.148748 389 360.148748 261"></polygon>
+                        <polygon id="Polygon-Copy-3" points="356 0 466.851252 64 466.851252 192 356 256 245.148748 192 245.148748 64"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,297 +1,462 @@
-img {
-    width: 100%;
-    height: auto;
-}
-
-.site-header {
-    .availability {
-        background-color: lighten($color: $baseColor, $amount: 10%);
-        color: $white;
-        min-height: 43px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        @media screen and (min-width: $mobile) {
-            width: 270px;
-            margin: 0 auto;
-        }
-        a {
-            color: $white;
-        }
-        &:hover {
-            background-color: $blue;
-        }
+section {
+    @media screen and (min-width: $mobile) {
+        padding: 120px 0;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 268px 0 120px 0;
     }
 }
+
+// Intro 
 
 .intro {
-    margin: 40px 0;
-    @media screen and (min-width: $tablet) {
-        margin: 100px 0 0 0;
-        .six {
-            width: 65%;
-        }
-    }
-    @media screen and (min-width: $desktop) {
-        margin: 200px 0 0 0;
-        p {
-            width: 68%;
-        }
-    }
-
-}
-
-.work {
+    padding: 160px 0 0 0;
     position: relative;
-    margin-bottom: 40px;
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 100px;
-        h2 {
-            margin-bottom: 38px;
-        }
-        .margin-clear {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
+    
+    @media (min-width: $tablet) {
+        padding-top: 228px;
     }
-    .highlight {
-        color: lighten($color: $baseColor, $amount: 40%);
+    @media (min-width: $desktop) {
+        padding-top: 385px;
     }
-}
 
-.clients {
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 180px;
-        h2 {
-            margin-bottom: 80px;
+    h1 {
+        font-size: 40px;
+        line-height:54px;
+        margin-bottom:24px;
+        @media (min-width: $desktop) {
+            font-size: 54px;
+            line-height:74px;
         }
     }
-    img {
-        max-height: 120px;
-        max-width: 120px;
-        padding: 10px 0;
-        @media screen and (min-width: $tablet) {
-            max-width: 230px;
-            max-height: 180px;
+    h2 {
+        font-size: 18px;
+        line-height: 28px;
+        @media (min-width: $desktop) {
+            padding-bottom: 8px;
         }
     }
-    .wqa {
-        padding-top: 5%;
-        @media screen and (min-width: $tablet) {
-            padding-top: 22.5%;
+    p {
+        font-weight: $font-semi-bold;
+        margin-left: 28px;
+        line-height: 23px;
+        @media (min-width: $desktop) {
+            padding-bottom: $padding;
         }
     }
-}
-
-.dotted-box {
-    @media screen and (min-width: $desktop) {
+    p:before {
+        content: " ";
+        background: url(../img/polygon.svg) no-repeat center;
         position: absolute;
-        right:10%;
-        height: 380px;
-        width: 500px;
-        background: url(../img/cross-grid.png) repeat top left;
+        height: 20px;
+        width: 20px;
+        left: 0;
     }
-}
+    .clients {
+        padding: 0 0 $large-padding 0;
+        display: block;
+        
+        @media (min-width: $tablet) {
+            padding: 0;
+            display: inline-block;
+            li {
+                padding-right: 28px;
+                margin: 0;
+                width: inherit;
+                float: left;
+            }
+        } 
 
-// DOTTED HEADER
-
-.dotted-header {
-    @media screen and (min-width: $tablet) {
-        margin-top: 40px;
-        height: 138px;
-        width: 100%;
-        background: url(../img/cross-grid.png) repeat top left;
-    }
-}
-
-
-// PAGE
-
-.page {
-    img {
-        padding-bottom: 20px;
-    }
-    margin-bottom: 48px;
-    .email-link {
-        @media screen and (min-width: $tablet) {
-            position: absolute;
-            top: 30%;
-            right: -30px;
-            font-size: 30px;
-        }
-        @media screen and (min-width: $desktop) {
-            position: absolute;
-            top: 40%;
-            right: 60px;
-        }
-    }
-    h5 {
-        @media screen and (min-width: $tablet) {
-            margin-top: 70px;
+        li {
+            width: 80%;
+            @media (min-width: $tablet) {
+                padding-right: 28px;
+                margin: 0;
+                width: inherit;
+                float: left;
+            } 
         }
     }
 }
+
+// About
 
 .about {
-    position: relative;
-    @media screen and (min-width: $desktop) {
-        img {
-            max-width: 280px;
-            height: auto;
-        }
-        .me {
-            float: right;
-            position: relative;
-            margin-top: 32px;
-        }
-        .arran {
-            float: left;
-            position: absolute;
-            top: 52%;
-            @media screen and (min-width: $largerScreen) {
-                right: 240px;
-            }
-        }
-    }
-   
-}
-
-
-// BLOG
-.blog {
-    @media screen and (min-width: $tablet) {
-        margin-top: 100px;
-        margin-bottom: 78px;
-    }
     article {
-        width: 100%;
-        @media screen and (min-width: $mobile) {
-            width: 65%;
-            margin: 0 auto;
+        position: relative;
+        margin-bottom: $padding*3;
+        max-width: 658px;
+        @media (min-width: $desktop) {
+            padding-bottom: 0;
         }
-        @media screen and (min-width: $tablet) {
-            width: 85%;
-            margin-top: 48px;
-            margin-bottom: 48px;
+        .faded {
+            position: absolute;
+            left: 0;
+            top: -20px;
+            z-index: -1;
         }
-        @media screen and (min-width: $desktop) {
-            width: 65%;
-         }
-        .post-header {
-            margin-top: 38px;
-            @media screen and (min-width: $tablet) {
-                margin-bottom: 24px;
-            }
-            time {
-                @media screen and (min-width: $tablet) {
-                    text-align: center;
-                }
-                display: block;
-                font-size: $smallFont;
-                font-weight: normal;
-                color: lighten($color: $baseColor, $amount: 60%);
-            }
+        h2 {
+            padding: 28px 0 0 $padding-medium;
+            font-weight: $font-semi-bold;
+            z-index: 1;
         }
-        .post-title {
-            a {
-                font-weight: 300;
-            }
-        }
-        .post-content {
-            pre {
-                margin: 22px 8px;
-            }
-            .img-med-center {
-                width: 100%;
-                @media screen and (min-width: $tablet) {
-                    width: 65%;
-                }
-                display: block;
-                margin: 0 auto;
-            }
-        }
-        blockquote {
-            font-style: italic;
-            background-color: #272822;
-            padding: 12px;
-            margin-left: 0;
-            margin-right: 0;
-            border-radius: $borderRadius;
-            font-size: 20px;
-            font-family: $graphik;
-            letter-spacing: 0;
-            font-weight: normal;
-            line-height: 1.6em;
-            p {
-                margin: 20px 10px;
-                color: $white !important;
-            }
-            @media screen and (min-width: $tablet) {
-                padding: 24px;
-            }
-        }
-        .middot {
-            width: 22px;
-            height: 1px;
-            background-color: $baseColor;
-            margin: 48px auto 0 auto;
-            display: block;
-        }
-        
-    }
-    .back-arrow {
-        cursor: pointer;
-        padding: 20px 0;
-        font-weight: normal;
-        &:before {
-            content: "←"
+        img {
+            margin-top: -78px;
+            width: 133%;
+            display: flex;
+            @media (min-width: $desktop) {
+                width: 168%;
+            }   
         }
     }
-    
+    .first {
+        @media (min-width: $desktop) {
+            padding-bottom: 68px;
+        }
+    }
+    @media (min-width: $desktop) {
+        padding-bottom: 0;
+    }
 }
 
+// Testimonials
 
-// DOWNLOAD BOX
-
-.download-box {
-    border-radius: $borderRadius;
-    cursor: pointer;
-    color: $white;
-    padding: 32px 24px;
-    background: lighten($color: $blue, $amount: 8%) url(../img/project-icon@2x.png) no-repeat right center;
-    background-size: 25%;
-    transition: all 0.5s ease;
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 18px;
+.testimonials {
+    @media (min-width: $desktop) {
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+    h2 {
+        padding-bottom: 0;
+        font-weight: $font-semi-bold;
+        @media screen and (min-width: $tablet) {
+            padding: 128px 0 0 $padding-medium;
+            z-index: 1;
+        }
     }
     h3 {
-        margin-bottom: 0;
-        font-size: 20px;
+        font-size: 40px;
+        line-height: $padding-medium;
+        text-align: center;
+        @media screen and (min-width: $tablet) {
+            text-align: left;
+            font-size: 70px;
+            line-height: 80px;
+            width: 50%;
+            position: absolute;
+            z-index: -1;
+        }
     }
-    &:hover {
-        background-size: 23%;
+    .testimonial {
+        clear: both;
+        .author {
+            text-align: center;
+            @media screen and (min-width: $tablet) {
+                float: left;
+            }
+            img {
+                width: 168px;
+                height: auto;
+                margin-bottom: 18px;
+            }
+            h4 {
+                font-size: $font-larger;
+                line-height: $font-larger;
+                margin-bottom: 12px;
+            }
+            h5 {
+                color: $color-three;
+                font-size: $font-base;
+                line-height: $font-base;
+            }
+        }
+        .content {
+            @media screen and (min-width: $tablet) {
+                max-width: 600px;
+                padding-left: 206px;
+                padding-top: 22px;
+                clear: right;
+            }
+        }
+    }
+    .nav {
+        text-align: center;
+        margin: 0 auto;
+        .count {
+            font-size: $font-base+1;
+            font-weight: $font-bold;
+        }
+        .btns {
+            display: inline-flex;
+            .left-btn {
+                background: url(../img/Left-btn.svg) no-repeat center;
+                cursor: pointer;
+                width: 46px;
+                height: 46px;
+                opacity: .3;
+                transition: 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .right-btn {
+                background: url(../img/Right-btn.svg) no-repeat center;
+                cursor: pointer;
+                width: 46px;
+                height: 46px;
+                transition: 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+       
     }
 }
 
-// FOOTER
+// Contact
 
-footer {
-    @media screen and (min-width: $tablet) {
-        margin-top: 48px;
+.contact {
+    padding-top: $padding*2;
+    @media screen and (min-width: $desktop) {
+        padding-top: $padding*4;
     }
-    .navigation {
-        margin-top: 0;
-        .main-nav {
-            ul {
-                text-align: center;
-                margin-bottom: 10px;
-                @media screen and (min-width: $tablet) {
-                    text-align: left;
-                } 
-            }
-            
+    h2 {
+        font-size: 70px;
+        line-height: 78px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        z-index: -1;
+        @media screen and (min-width: $desktop) {
+            font-size: 90px;
+            margin-right: 90px
         }
+    }
+    h3 {
+        position: relative;
+        margin-top: -36px;
+        z-index: 1;
+        @media screen and (min-width: $desktop) {
+            margin-top: -36px;
+            margin-bottom: 78px;
+            padding-left: $padding-medium;
+            font-size: 40px;
+        }
+    }
+    h4 {
+        @media screen and (min-width: $desktop) {
+            font-size: 20px;
+            margin-top: 98px;
+            margin-bottom: 0;
+        }
+    }
+    .guidelines {
+        font-weight: $font-medium;
+        @media screen and (min-width: $desktop) {
+            margin-top: 58px;
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            .btn-label {
+                justify-content: space-between; 
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    padding-top: $padding;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }   
+    p {
+        font-size: 12px;
+        color: $color-six;
+        @media screen and (min-width: $desktop) {
+            margin-top: -8px;
+        }
+    }
+    ul {
+        display: inline-flex;
+        margin-bottom: 28px;
+        @media screen and (min-width: $desktop) {
+            float: right;
+            margin-bottom: 0;
+        }
+        li {
+            margin-bottom: 0;
+            font-weight: $font-medium;
+            font-size: 12px;
+            margin-right: 21px;
+            @media screen and (min-width: $desktop) {
+                margin-left: 21px;
+                margin-right: 0;
+            }
+            a {
+                color: $color-two;
+                text-decoration: none;
+                &:hover {
+                    color: $color-three;
+                }
+            }
+        }
+    }
+}
+
+
+// Guidelines
+
+.page {
+    padding: 120px 0;
+    h1 {
+        color: $color-four;
+        opacity: .2;
+        font-weight: $font-bold;
+        font-size: 60px;
+        line-height: 68px;
+        @media screen and (min-width: $tablet) {
+            font-size: 120px;
+            line-height: 140px;
+        }
+    }
+    h2 {
+        color: $color-four;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 18px;
+        padding: 0;
+    }
+    h4 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 18px;
+        padding: 0;
+    }
+    img {
+        border-radius: 20px;
+    }
+    .block {
+        padding: 2% 0;
+        @media screen and (min-width: $tablet) {
+            padding: 8% 0;
+        }
+    }
+    .staggered {
+        @media screen and (min-width: $tablet) {
+            padding-top: 10%;
+        }
+    }
+    a {
+        font-weight: $font-semi-bold;
+        margin-left: 28px;
+        line-height: 23px;
+        text-decoration: none;
+    }
+    a:before {
+        content: " ";
+        background: url(../img/polygon.svg) no-repeat center;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        left: 20px;
+        @media screen and (min-width: $mobile) {
+            left: 0;
+        }
+    }
+    article {
+        @media screen and (min-width: $tablet) {
+            max-width: 65%;
+        }
+        padding-bottom: 8%;
+        h2 {
+            font-size: 22px;
+            line-height: 23px;
+            padding-bottom: 18px;
+        }
+        time {
+            color: $color-four;
+            font-size: $font-small;
+            font-weight: $font-medium;
+        }
+        .post-content {
+            padding-top: 2%;
+            a {
+                margin-left: 0;
+            }
+            a:before {
+                background: none;
+                position: static;
+            }
+            img {
+                border-radius: 20px;
+            }
+        } 
+        .read-more-link {
+            margin-left: 0;
+            text-decoration: underline;
+            &:before {
+                background: none;
+                position: static;
+            }
+        }
+        .back-arrow a {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        blockquote {
+            p {
+                font-size: $font-base;
+                @media screen and (min-width: $tablet) {
+                    font-size: 28px;
+                    line-height: 48px;
+                }
+            }
+            &:before {
+                content: " ";
+                background: url(../img/polygon.svg) no-repeat center;
+                position: absolute;
+                height: 28px;
+                width: 28px;
+                left: 28px;
+                @media screen and (min-width: $mobile) {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.project {
+    padding: 4% 0;
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+        color: $color-two;
+        font-weight: $font-semi-bold;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 28px;
+        color: $color-four;
+    }
+    a {
+        margin-left: 0;
+    }
+    a:before {
+        background: none;
+        position: static;
     }
 }

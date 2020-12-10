@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 10 Enterprise mobile development tips for entrepreneurs/developers
+title: 10 tips for developers
 permalink: /blog/10-Enterprise-mobile-development-tips
 author: Jay Cohen
 tags: iOS, Enterprise, Swift
 description: Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section.
 ---
 
-
 ## 1. Organise the project
-Before starting the project it’s important to know where to start (ancient proverb). Group dependent parts of your apps functionality and create tickets for each section. Tickets are what’s used in software building to associate a task to an individual or team, [if you don’t know](https://www.atlassian.com/agile/project-management/epics-stories-themes){:target="_blank"} 😉. This approach makes it easier to set internal deadlines for pre release builds that become ready for team testing, even if that team is you. You could also setup GIT flow to handle release organisation or create them manually from you master branch.
+Before starting the project it’s important to know where to start. Group dependent parts of your apps functionality and create tickets for each section. Tickets are what’s used in software building to associate a task to an individual or team, [if you don’t know](https://www.atlassian.com/agile/project-management/epics-stories-themes){:target="_blank"} 😉. This approach makes it easier to set internal deadlines for pre release builds that become ready for team testing, even if that team is you. You could also setup GIT flow to handle release organisation or create them manually from you master branch.
 
 ![plan your projects]({{site.url}}/assets/blog/2019/organise-planet.jpeg){:class="img-med-center"}
 
@@ -65,5 +64,3 @@ Finally, take the time to review your code and look for repetition you can omit.
 
 ## Summary
 Mobile development is an ever changing entity and by utilising some or all of the techniques above your app should be in a better position to handle users at scale. Keep security concerns at the forefront of development and remember to test features for failing cases as much as the positives. People tend to read reviews before they download apps and if you’re full of ⭐️ star reviews, your business will fail.
-
-*This post was originally on Medium.*
