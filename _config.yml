@@ -13,6 +13,8 @@ permalink: pretty
 markdown: kramdown
 highlighter: rouge
 date_format: "%b %-d, %Y"
+# paginate: 2
+# paginate_path: "/blog/page:num/"
 
 # Plugins
 plugins:
