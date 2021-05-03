@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SwiftUI Can Help Stop Crashes" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://appdeveloperjay.com/blog/How-SwiftUI-Can-Help-Solve-App-Crashes/"},"url":"https://appdeveloperjay.com/blog/How-SwiftUI-Can-Help-Solve-App-Crashes/","author":{"@type":"Person","name":"Jay Cohen"},"description":"Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and also how simple this could be achieved today in SwiftUI.","headline":"SwiftUI Can Help Stop Crashes","dateModified":"2020-11-18T00:00:00+00:00","datePublished":"2020-11-18T00:00:00+00:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://appdeveloperjay.com/blog/How-SwiftUI-Can-Help-Solve-App-Crashes/","mainEntityOfPage":{"@type":"WebPage","@id":"https://appdeveloperjay.com/blog/How-SwiftUI-Can-Help-Solve-App-Crashes/"},"author":{"@type":"Person","name":"Jay Cohen"},"description":"Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and also how simple this could be achieved today in SwiftUI.","headline":"SwiftUI Can Help Stop Crashes","dateModified":"2020-11-18T00:00:00+00:00","datePublished":"2020-11-18T00:00:00+00:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://appdeveloperjay.com/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="https://appdeveloperjay.com/feed.xml" title="App Developer and Hybrid to Native Specialist" /><script>
     if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
@@ -63,7 +63,7 @@
       </nav>
       </header>
       <div class="container">
-
+        
         <section class="page">
   <article class="post">
     <div class="back-arrow"><a onclick="window.history.back()">Back</a><br><br><br><br><br></div>
@@ -73,13 +73,13 @@
         </time>
     </header>
     <div class="post-content">
-        <p>Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and how simple this could be achieved today in SwiftUI. To give an example the complexity of the project. One specific element required nested UICollectionView’s 5 levels deep, which passed data back and forth up the stack to a HeaderView. It also resized dynamically just to add some extra juice.</p>
+        <p>Last month I was running through an old project to figure out how I solved a problem (4 years ago). Scouring through each storyboard I suddenly realised how complex the project was and how simple this could be achieved today in SwiftUI. To give an example the complexity of the project. One specific element required nested UICollectionView's 5 levels deep, which passed data back and forth up the stack to a HeaderView. It also resized dynamically just to add some extra juice.</p>
 
-<p>Given that Storyboards in iOS have their quirks, what we have today in terms of SwiftUI make even the complex layouts easy to build. What I like about SwiftUI is that it’s far easier to learn for newbies, instant preview of UI design, and that it appears (from my testing) to be easier to compile for Xcode. This reduce of build times means the work can be done much more quickly, making the cost cheaper to clients.</p>
+<p>Given that Storyboards in iOS have their quirks, what we have today in terms of SwiftUI make even the complex layouts easy to build. What I like about SwiftUI is that it's far easier to learn for newbies, instant preview of UI design, and that it appears (from my testing) to be easier to compile for Xcode. This reduce of build times means the work can be done much more quickly, making the cost cheaper to clients.</p>
 
-<p>Currently SwiftUI is in 2.0 which brings the important <b>Lazy</b> back into the library, along with extra controls and components. I’m a big fan of lazy loading any element on screen as it seriously helps reduce stutters on your application when you’ve multiple components inside a ScrollView. A new modifier called <strong>onChange</strong>  which allows you to listen to <strong>@State</strong> changes and run any methods you need. This alone would have made the previous complex project mentioned above a doddle.</p>
+<p>Currently SwiftUI is in 2.0 which brings the important <b>Lazy</b> back into the library, along with extra controls and components. I'm a big fan of lazy loading any element on screen as it seriously helps reduce stutters on your application when you've multiple components inside a ScrollView. A new modifier called <strong>onChange</strong>  which allows you to listen to <strong>@State</strong> changes and run any methods you need. This alone would have made the previous complex project mentioned above a doddle.</p>
 
-<p>The main benefit I see to using SwiftUI is how it addresses most UI crashes is the combination of it’s implementation and how it uses <strong>@State</strong> and <strong>@observedObject</strong>. Obviously if something is causing your application to pause or crash due to misallocation of memory or threading issues then SwiftUI won’t help. A secondary benefit I also see is how it seamlessly merges with existing UIKit elements where you have complexity in your UI. For instance, any occurance where I need complete control of lists in a Pre &amp; Post View layer I would still opt for a standard UI Component layer. <strong>@State</strong> and <strong>@ObservedObject</strong> can only get you so far. None of the projects I’ve worked on since have required this level of development, but I’m ready for it.</p>
+<p>The main benefit I see to using SwiftUI is how it addresses most UI crashes is the combination of it's implementation and how it uses <strong>@State</strong> and <strong>@observedObject</strong>. Obviously if something is causing your application to pause or crash due to misallocation of memory or threading issues then SwiftUI won't help. A secondary benefit I also see is how it seamlessly merges with existing UIKit elements where you have complexity in your UI. For instance, any occurance where I need complete control of lists in a Pre &amp; Post View layer I would still opt for a standard UI Component layer. <strong>@State</strong> and <strong>@ObservedObject</strong> can only get you so far. None of the projects I've worked on since have required this level of development, but I'm ready for it.</p>
 
       </div>
     <a class="u-url" href="/blog/How-SwiftUI-Can-Help-Solve-App-Crashes/" hidden></a>

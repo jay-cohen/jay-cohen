@@ -8,8 +8,8 @@
 <meta property="og:title" content="Geofencing in iOS" />
 <meta name="author" content="Jay Cohen" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising." />
-<meta property="og:description" content="When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising." />
+<meta name="description" content="When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple&#39;s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising." />
+<meta property="og:description" content="When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple&#39;s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising." />
 <link rel="canonical" href="https://appdeveloperjay.com/blog/geofencing-in-ios/" />
 <meta property="og:url" content="https://appdeveloperjay.com/blog/geofencing-in-ios/" />
 <meta property="og:site_name" content="App Developer and Hybrid to Native Specialist" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Geofencing in iOS" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://appdeveloperjay.com/blog/geofencing-in-ios/"},"url":"https://appdeveloperjay.com/blog/geofencing-in-ios/","author":{"@type":"Person","name":"Jay Cohen"},"description":"When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.","headline":"Geofencing in iOS","dateModified":"2020-04-25T00:00:00+01:00","datePublished":"2020-04-25T00:00:00+01:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://appdeveloperjay.com/blog/geofencing-in-ios/","mainEntityOfPage":{"@type":"WebPage","@id":"https://appdeveloperjay.com/blog/geofencing-in-ios/"},"author":{"@type":"Person","name":"Jay Cohen"},"description":"When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple&#39;s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.","headline":"Geofencing in iOS","dateModified":"2020-04-25T00:00:00+01:00","datePublished":"2020-04-25T00:00:00+01:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://appdeveloperjay.com/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="https://appdeveloperjay.com/feed.xml" title="App Developer and Hybrid to Native Specialist" /><script>
     if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
@@ -63,7 +63,7 @@
       </nav>
       </header>
       <div class="container">
-
+        
         <section class="page">
   <article class="post">
     <div class="back-arrow"><a onclick="window.history.back()">Back</a><br><br><br><br><br></div>
@@ -73,18 +73,18 @@
         </time>
     </header>
     <div class="post-content">
-        <p>When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple’s Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.</p>
+        <p>When previously working for a client I had the chance to create a proof of concept (POC) that enabled uses to be notified via Apple's Push Notification Service or third party tool when entering a chosen boundry. Once entered into a specific boundry a user would be shown information to interogate alowing with targeted advertising.</p>
 
 <h2 id="inital-problems">Inital problems</h2>
-<p>The main issue faced was around accuracy. iPhones are currently accurate to a radius of 10-15m and uses on average 2 cell tower GPS locations to provide the coordinates that pin point the device. While it isn’t true GPS it’s still an accurate way to determine a users location. The second issue would be the drawing of these boundries inconjunction with receiving notifications (performance issue). Having gone through various scenarios the solution to store and cache data once a user had entered a location seemed the best of the bunch. Under this solution the server and the device interaction would be small (push notification size) and keep costs low at server level.</p>
+<p>The main issue faced was around accuracy. iPhones are currently accurate to a radius of 10-15m and uses on average 2 cell tower GPS locations to provide the coordinates that pin point the device. While it isn't true GPS it's still an accurate way to determine a users location. The second issue would be the drawing of these boundries inconjunction with receiving notifications (performance issue). Having gone through various scenarios the solution to store and cache data once a user had entered a location seemed the best of the bunch. Under this solution the server and the device interaction would be small (push notification size) and keep costs low at server level.</p>
 
 <h2 id="solution">Solution</h2>
 
-<p>Having advised on how the back end services would handle the transferring of data between entites the POC was created. The POC was delivered ahead of schedule and testing began. Both myself and the client visited various locations throughout the UK and with the back end guys on speakerphone we tested Guerrilla style. Under testing we found an issue relating to device notification queuing and removal, but that was an easy fix. If that’s one takeaway from this article is that you should test your applications under the scenario that it would be used in, don’t just rely on the simulator.</p>
+<p>Having advised on how the back end services would handle the transferring of data between entites the POC was created. The POC was delivered ahead of schedule and testing began. Both myself and the client visited various locations throughout the UK and with the back end guys on speakerphone we tested Guerrilla style. Under testing we found an issue relating to device notification queuing and removal, but that was an easy fix. If that's one takeaway from this article is that you should test your applications under the scenario that it would be used in, don't just rely on the simulator.</p>
 
 <h3 id="summary">Summary</h3>
 
-<p>Overall the project was a success and the POC proved a viable MVP for the client to attract investors. The client managed to secure funding and the application was built by a small team I helped create. Whilst the bulk of the code is propietory and bound by an NDA what I can share is the Swift 3 code example below. This is how to draw a boundry around a set of coordinates pulled from Core data, It looks like a small chunk but under a MVCS pattern each “Bulk” workload is farmed off to the service class it represents i.e. UserService, CoreDataService. This keeps controllers clean to “Control” and decouples logic allowing for separation of concerns.</p>
+<p>Overall the project was a success and the POC proved a viable MVP for the client to attract investors. The client managed to secure funding and the application was built by a small team I helped create. Whilst the bulk of the code is propietory and bound by an NDA what I can share is the Swift 3 code example below. This is how to draw a boundry around a set of coordinates pulled from Core data, It looks like a small chunk but under a MVCS pattern each "Bulk" workload is farmed off to the service class it represents i.e. UserService, CoreDataService. This keeps controllers clean to "Control" and decouples logic allowing for separation of concerns.</p>
 
 <figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">var</span> <span class="nv">fences</span><span class="p">:</span> <span class="p">[</span><span class="kt">Fence</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
   <span class="c1">// Array of example fences pulled from data store, radius value in miles</span>

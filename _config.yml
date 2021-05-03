@@ -3,7 +3,7 @@
 title: App Developer and Hybrid to Native Specialist
 email: talk@jcohen.uk
 description: Freelance iOS App Developer. I specialise in converting hybrid apps to native apps and fixing poorly coded ones which stops 1 star customer reviews. 11 years development experience with global brands, not for profit and health. Contact for a free consultation.
-url: "https://appdeveloperjay.com"
+url: https://appdeveloperjay.com
 lang: en
 github_username: jay-cohen
 google_analytics: UA-140849878-2
@@ -28,3 +28,6 @@ plugins:
 sass:
     sass_dir: assets/css
     style: compressed
+
+kramdown:
+  smart_quotes: apos,apos,quot,quot
