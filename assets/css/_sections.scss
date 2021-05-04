@@ -365,15 +365,15 @@ footer {
     a {
         font-weight: $font-semi-bold;
         margin-left: 28px;
-        line-height: 23px;
+        line-height: 30px;
         text-decoration: none;
     }
     a:before {
         content: " ";
         background: url(../img/polygon.svg) no-repeat center;
         position: absolute;
-        height: 20px;
-        width: 20px;
+        height: 23px;
+        width: 23px;
         left: 20px;
         @media screen and (min-width: $mobile) {
             left: 0;

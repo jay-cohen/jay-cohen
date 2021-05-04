@@ -30,6 +30,12 @@ ul {
     list-style: none;
 }
 
+@media screen and (max-width: $mobile) {
+    ol, ul {
+        padding-left: 20px;
+    }
+}
+
 ol {
     @media screen and (min-width: $tablet) {
         padding-left: 16px;
