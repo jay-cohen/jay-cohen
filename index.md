@@ -26,16 +26,16 @@ title: Jay Cohen
                 <span class="faded">11</span>
                 <h2>Years of experience<span class="color-three">.</span></h2>
                 <p>I'm a freelance app developer and I've been building apps for clients for over 11 years in a wide range of sectors including international sports brands, film studios, health, CRM, and not for profit. Based in the middle of the UK, I've worked with clients across the world.</p>
-                <p>In my spare time I can be seen trekking in the outdoors with family, working on a pilots license or attempting to make cryptocurrency money.</p>
+                <p>In my spare time I can be seen trekking in the outdoors with family, working on a pilots license or attempting to make gluten free tasty.</p>
             </article>
         </div>
         <div class="offset-by-five column">
             <article id="work">
                 <span class="faded">48</span>
                 <h2>Projects<span class="color-three">.</span></h2>
-                <p>Most of the projects I've worked on are bound by NDA's, which is how most freelancers work today. A lot of work comes in from recommendations, so my portfolio contains side projects to keep my skills fresh. I find this way works best and is beneficial to clients.</p>
-                <p>I like to work in a collaborative and open way, either working solo or part of a team tackling a larger problem. My code is clean, well documented, and easily read by non technical people, should they want to have a look under the hood.</p>
-                <a href="/projects"><img src="{{site.url}}{{ 'assets/img/Projects.svg' | relative_url }}" alt="Projects Banner"></a>
+                <p>Most of the projects I've worked on are bound by NDA's, which is how most freelancers work today. A lot of my work comes in from recommendations, so my <a href="{{site.url}}/projects">portfolio</a> contains a few side projects to keep my skills fresh.</p>
+                <p>I like to work in a collaborative and open way, either working solo or part of a cross functional team tackling a larger problem. The code I write is clean, well documented, and easily read by stakeholders.</p>
+                <a href="{{site.url}}/projects"><img src="{{site.url}}{{ 'assets/img/Projects.svg' | relative_url }}" alt="Projects Banner"></a>
             </article>
         </div>
     </div>
@@ -150,7 +150,7 @@ title: Jay Cohen
         <div class="offset-by-one column five columns">
             <h4>Guidelines<span class="color-three">.</span></h4>
             <p>Due to Covid-19 I only work remotely and I aim to get back to all enquries within a day.</p>
-            <p>If you're looking to hire me for a project, please provide any details along with timelines. I charge £500 per day for app development (plus VAT if applicable) and I can't work for profit-share or equity. I also offer support blocks to new and existing clients with a minimum of 2 hours booked per month.</p>
+            <p>If you're looking to hire me for a project, please provide any details along with timelines. I charge £550 per day for app development (plus VAT if applicable) and I can't work for profit-share or equity. I also offer support blocks to new and existing clients with a minimum of 2 hours booked per month.</p>
             <div class="guidelines">Check out my full guidelines <a href="{{site.url}}/guidelines" title="View guidelines">here</a></div>
         </div>
     </div>
