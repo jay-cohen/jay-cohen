@@ -1,7 +1,10 @@
-# Hi 👋 My name is Jay Cohen 
-## Software Developer, Designer & Entrepreneur 
-Always be building something.  
-
+<div id="user-content-toc">
+  <ul>
+    <summary><h1 style="display: inline-block;">Hi 👋 My name is Jay Cohen</h1></summary>
+    <summary><h2 style="display: inline-block;">Software Developer, Designer & Entrepreneur</h2></summary>  
+  </ul>
+</div>
+<p>Always be building something.</p>
 * 🤝  I'm open to collaborating on Mental Health startups
 * 🤝  I'm open to collaborating on Productivity startups
 
