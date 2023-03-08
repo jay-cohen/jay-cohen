@@ -1,6 +1,6 @@
 <div id="user-content-toc">
   <ul>
-    <summary><h1 style="display: inline-block;">Hi 👋 My name is Jay Cohen<br /><span style="font-size: 22px !important;">Software Developer, Designer & Entrepreneur</span></h1></summary>
+    <summary><h1 style="display: inline-block;">Hi 👋 My name is Jay Cohen.<br /><span style="font-size: 22px !important;">Software Developer, Designer & Entrepreneur.</span></h1></summary>
     <p>Always be building something.</p>
   </ul>
 </div>
