@@ -1,8 +1,9 @@
-# Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Jay Cohen 
+# Hi 👋 My name is Jay Cohen 
 ## Software Developer, Designer & Entrepreneur 
 Always be building something.  
 
-* 🤝  I'm open to collaborating on Mental Health Startups
+* 🤝  I'm open to collaborating on Mental Health startups
+* 🤝  I'm open to collaborating on Productivity startups
 
 ### Skills  
 
