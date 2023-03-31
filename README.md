@@ -1,4 +1,4 @@
-![Header](./gh-header.png)
+![Header](./github-header.png)
 
 ### Languages & Tools  
 
