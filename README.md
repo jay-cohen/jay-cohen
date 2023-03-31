@@ -1,9 +1,4 @@
-<div id="user-content-toc">
-  <ul>
-    <summary><h1 style="display: inline-block;">Hi 👋 My name is Jay Cohen.<br /><span style="font-size: 22px !important;">Software Developer, Designer & Entrepreneur.</span></h1></summary>
-    <p>I'll always be building.</p>
-  </ul>
-</div>
+![Header](./gh-profile-header.png)
 
 ### Languages & Tools  
 
