@@ -1,4 +1,4 @@
-![Header](./gh-profile-header.png)
+![Header](./gh-header.png)
 
 ### Languages & Tools  
 
