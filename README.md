@@ -38,7 +38,7 @@ Over the years, I’ve collaborated with a variety of clients across industries 
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jaycohen)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jay-cohen)
 
 </div>
 
