@@ -4,11 +4,11 @@
 
 ### iPhone, iPad, Apple TV & Watch Developer | United Kingdom
 
-I’m a self-taught app developer specialising in Apple platforms development, with over a decade of professional experience creating high-quality applications.
+Engineering leader specialising in the architecture, delivery, and evolution of large-scale iOS platforms. Experienced in defining technical direction, leading architectural initiatives, and building scalable mobile solutions that balance user experience, engineering excellence, and business objectives.
 
-I’m passionate about technology and love continuously improving my craft by learning new frameworks, tools, and development practices. Building apps isn’t just my profession, it’s something I genuinely enjoy.
+Strong background in Swift, SwiftUI, modern concurrency, API integration, data modelling, and mobile architecture. Proven track record of modernising legacy systems, reducing technical complexity, improving codebase maintainability, and establishing engineering practices that enable teams to deliver reliable, high-quality software at scale. 
 
-Over the years, I’ve collaborated with a variety of clients across industries including e-commerce, finance, health, sports and social media, helping bring ideas to life through clean, user-focused development.
+Recognised for combining hands-on technical expertise with collaborative leadership, mentoring engineers, influencing technical strategy, and working across product, design, and engineering teams to deliver impactful products and long-term platform improvements.
 
 </div>
 
