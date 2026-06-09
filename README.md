@@ -1,23 +1,28 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19&height=200&section=header&text=Jay%20Cohen&fontSize=50&fontColor=fff&animation=fadeIn)
+# Hi, I'm Jay Cohen 👋
 
-<div align="center">
+I'm a **Senior iOS Engineer** specialising in **Swift, SwiftUI, UIKit, legacy modernisation, testing and CI/CD**.
 
-### iPhone, iPad, Apple TV & Watch Developer | United Kingdom
+I build and modernise production iOS apps for product teams, startups and consultancy clients. My work usually sits at the intersection of hands-on feature delivery, architecture, maintainability and release stability.
 
-Engineering leader specialising in the architecture, delivery, and evolution of large-scale iOS platforms. Experienced in defining technical direction, leading architectural initiatives, and building scalable mobile solutions that balance user experience, engineering excellence, and business objectives.
+## What I do
 
-Strong background in Swift, SwiftUI, modern concurrency, API integration, data modelling, and mobile architecture. Proven track record of modernising legacy systems, reducing technical complexity, improving codebase maintainability, and establishing engineering practices that enable teams to deliver reliable, high-quality software at scale. 
+- Build production iOS features in Swift, SwiftUI and UIKit
+- Modernise legacy UIKit codebases safely
+- Introduce modular architecture, MVVM and cleaner boundaries
+- Improve test coverage with XCTest and snapshot testing
+- Set up CI/CD workflows with Xcode Cloud and GitHub Actions
+- Mentor engineers through code review, pairing and technical docs
 
-Recognised for combining hands-on technical expertise with collaborative leadership, mentoring engineers, influencing technical strategy, and working across product, design, and engineering teams to deliver impactful products and long-term platform improvements.
+## Current interests
 
-</div>
+- SwiftUI/UIKit interoperability
+- async/await and structured concurrency
+- Testable iOS architecture
+- Accessibility and performance
+- Practical engineering leadership
 
-<div align="center">
+## Contact
 
-#### 📫 Let's Connect
+Open to **Senior and Lead iOS Engineer** roles, especially UK remote or hybrid.
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jay-cohen)
-
-</div>
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19&height=100&section=footer)
+[LinkedIn](https://www.linkedin.com/in/j-cohen/)
